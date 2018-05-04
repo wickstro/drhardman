@@ -1,0 +1,59 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: "cronos-pro",sans-serif;
+$base-font-size:   18px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$large-font-size:  $base-font-size * 1.475;
+$base-line-height: 1.6;
+
+$spacing-unit:     17px;
+$base-padding:      27px;
+$dubbel-padding:    54px;
+
+$text-color:        #000000;
+$background-color:  #ffffff;
+$orange-color:      #00bdbe;
+$white-color:       #fcfaf8;
+$darkbrown-color:   #241e1d;
+$darkbrown-color-light: #6e99d4;
+$darkbrown-color-dark:  #6e99d4;
+$beige:             #e0c09f;
+$green:             #71a82b;
+$sidnavi:           #937d7a;
+$blue:              #6e99d4;
+
+
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+
+
+$mobile: 600px;
+$tablet: 800px;
+$laptop: 1024px;
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "layout"
+;
+

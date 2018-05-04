@@ -1,3 +1,41 @@
-{% include head.html %} {% include header.html %}
+---
+layout: default
+comments: true
+---
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 offset-md-1">
+        <ul class="sidnavi">
+
+          {% if page.type  == "produkter" %}
+            <li class="listsidnavi"><a class="text-capitalize" href="/#page-produkter">{{ page.type }}</a></li>
+            <li class="active"><a href="#page-top">{{ page.title }}</a></li>
+
+            {% endif %}
+          {% if page.type  == "ingredienser" %}
+            <li class="listsidnavi"><a class="text-capitalize" href="/ingredienser/">{{ page.type }}</a></li>
+            <li class="active"><a href="#page-top">{{ page.title }}</a></li>
+          {% endif %}
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 {{ content }}
-{% include footer.html %}
+
+<section class="padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <h4>Frågor </h4><p>Ring 0407642085<br>Skriv <a type="email" href="mailto:lotta.hardman@gmail.com?subject=Fråga om DrHardmans produkter">lotta.hardman@gmail.com</a></p>
+        <!--<hr class="primary" />
+        <h4>Kommentera och diskutera produkten här:</h4>-->
+
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,33 @@
+---
+layout: default
+type: Ingredienser
+---
+<section class="spacing-unit">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                    <a href="#page-top"></a>
+                        <h1>Ingredients</h1><p>på engelska/englanniksi</p>
+                        <p>Här kommer så småningom att finnas fakta om ALLA ingredienser Dr Hardman använder i sina produkter. Till att börja med endast på engelska. / Tähän ilmestyy pikkuhiljaa listaus kaikista Dr Hardmanin käyttämistä ainesosista, alustavasti tekstit englanniksi.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="light-bg">
+    <div class="texture-border-top">
+    </div>
+    <div class="container pt-5 pb-4">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                    {% for page in site.pages %}
+                        {% if page.type == "ingredienser" %}
+                        {% include ingredientlisting.html %}
+                        {% endif %}
+                    {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+
