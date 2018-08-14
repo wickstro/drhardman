@@ -137,9 +137,11 @@ img {
 }
 
 .darkbrown {
-  background-color: #000000;
+  background: url('../img/dome.jpg') center top;
   width: 100%;
+  height: 60vh;
 }
+
 .white {
   background-color: #ffffff;
 }
@@ -170,21 +172,6 @@ img {
 
 }
 
-.texture-border-top {
-  height: 14px;
-  width: 100%;
-  background: url(/img/border-top.png) top repeat-x;
-  position: absolute;
-  top: 0;
-}
-
-.texture-border-bottom {
-    height: 14px;
-    width: 100%;
-    background: url(/img/border-bottom.png) bottom repeat-x;
-    position: absolute;
-    bottom: 0;
-  }
 
 button, .button {
   border-radius: 25px;
@@ -560,4 +547,9 @@ ul.navi  {
 
 
   }
+
+
+.bg-1 {
+  background: url('../img/dome.jpg');
+}
 
