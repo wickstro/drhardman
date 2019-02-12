@@ -31,19 +31,36 @@ img {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
+  @media(max-width:$tablet) {
+    max-width: 768px;
+  }
+  @media(max-width:$mobile) {
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
 }
 
 header {
-  max-width: 10%;
+  width: 10%;
+  min-width: 91px;
   padding-left: 20px;
   padding-right: 20px;
   background-color: rgba(0, 0, 0, 0.4);
+  @media(max-width:$mobile) {
+    width: 100%;
+  }
 }
 
 .page-content {
-  max-width: 65%;
+  max-width: 80%;
   padding-left: 20px;
   padding-right: 20px;
+  @media(max-width:$tablet) {
+   width: 70%;
+  }
+  @media(max-width:$mobile) {
+    width: 100%;
+  }
 }
 
 //* FONT STYLES *//
