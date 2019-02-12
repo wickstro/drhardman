@@ -32,18 +32,15 @@
       }(document, 'script', 'facebook-jssdk'));
   </script>
 
-  <a class="jumptarget" name="page-top" id="page-top"></a>
-
-  {% include header.html %}
-
-  <div class="page-content">
-    <div class="wrapper">
-
-      {{ content }}
-
-    </div> <!-- wrapper -->
-  </div> <!-- page content -->
-
+  <div id="sitewrapper">
+    <a class="jumptarget" name="page-top" id="page-top"></a>
+    {% include header.html %}
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div> <!-- wrapper -->
+    </div> <!-- page content -->
+  </div>
   {% include footer.html %}
   </body>
 
