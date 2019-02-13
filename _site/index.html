@@ -22,16 +22,16 @@
 
   <title>Dr Hardman</title>
 
+  <!-- Slider -->
   <link href="/slick/slick.css" rel="stylesheet"  type="text/css"/>
   <link href="/slick/slick-theme.css" rel="stylesheet"  type="text/css"/>
 
   <!-- Fonts -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-
   <link rel="icon" type="image/png" href="/img/favicon.png">
   <link rel="stylesheet" href="/css/main.css">
-
+  <link rel="stylesheet" type="text/css" href="/js/snow.css">
 
   <!-- Javascripts -->
   <script src="https://use.typekit.net/shz0rmu.js"></script>
@@ -41,6 +41,7 @@
 
   <script defer type="text/javascript" src="/slick/slick.min.js"></script>
   <script defer type="text/javascript" src="/slick/slick_init.js"></script>
+  <script defer type="text/javascript" src="/js/snow.js"></script>
 </head>
 
 
@@ -71,6 +72,15 @@
           js.src = "//connect.facebook.net/sv_SE/sdk.js";
           fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          new Snow('#sitewrapper',{
+              number:45,
+              r: 4,
+              v: 1.4
+          });
+      });
   </script>
 
   <div id="sitewrapper">
@@ -107,8 +117,8 @@
             <a class="dropdown-item" href="/lipbalmvitamin">No 71 Vitamin Lip Balm</a>
             <a class="dropdown-item" href="/no80-gentle-face-wash-powder">No 80 Gentle Face Wash</a>
             <a class="dropdown-item" href="/no81-lux-soap">No 81 Lux Soap ansiktstvål</a>
-            <a class="dropdown-item" href="/no90-refreshing-face-mist">No 90 Refreshing Face Mist</a>
-            <a class="dropdown-item" href="/no92-purifying-face-mist">No 92 Purifying Face Mist</a>
+            <!--<a class="dropdown-item" href="/no90-refreshing-face-mist">No 90 Refreshing Face Mist</a>
+            <a class="dropdown-item" href="/no92-purifying-face-mist">No 92 Purifying Face Mist</a>-->
             <a class="dropdown-item" href="/no93-hydrating-face-mist">No 93 Hydrating Face Mist</a>
         </div>
     </li>
@@ -127,7 +137,7 @@
             <a class="dropdown-item" href="/braattveta#drlottahardman">Om Dr Lotta Hardman</a>
         </div>
     </li>
-    <li class="nav-item"><a class="" href="/fi">Suomeksi</a></li>
+    <li class="nav-item"><a  href="/fi" >Suomeksi</a></li>
 </ul>
         <a class="logo" href="/"><img class="logoimg img-fluid" src="/img/DRH_logo_invert.png" alt="Dr Hardman logo"></a>
         <a class="logonamn" href="/"><img class="logonamnimg img-fluid" src="/img/drhardmanlogo.png" alt="Dr Hardman name"></a>
@@ -139,10 +149,10 @@
       <div class="wrapper">
         <a name="page-top" id="page-top"></a>
 
-<section class="padding">
-                <h1 class="heroheader">Huden är ditt största organ <br>skäm bort och skydda den</h1>
-                <p class="">Dr Hardman's färska, närproducerade och helt naturliga produkter ger dig de renaste ingredienserna, speciellt utvalda för sina helande egenskaper, utan extra kemikalie­belastning. Ge din hud ren mat!</p>
-                <a class="button" target="_blank" href="https://arenan.yle.fi/1-4261190">Lyssna i Radio Vega!</a>
+<section class="hero">
+    <h1 class="heroheader">Huden är ditt största organ skäm bort och skydda den</h1>
+    <p class="herop text-center">Dr Hardman's färska, närproducerade och helt naturliga produkter ger dig de renaste ingredienserna, speciellt utvalda för sina helande egenskaper, utan extra kemikalie­belastning. Ge din hud ren mat!</p>
+    <p class="herop text-center"><a class="button" target="_blank" href="https://arenan.yle.fi/1-4261190">Lyssna i Radio Vega!</a></p>
 </section>
 
 <a name="jumtarget" id="page-produkter"></a>
@@ -459,7 +469,7 @@
 
 </section>
 
-<section class="dubbelpadding">
+<section class="dubbelpadding black08">
         <div class="text-center">
             <a class="" name="page-buy" id="page-buy"></a>
 
@@ -518,7 +528,7 @@
 </section>
 
 
-<section class="padding text-center">
+<section class="padding text-center black08">
 
                 <h1 class="faktarutarubrik">Färskt<br>närpr&shy;oducerat och <br>100% naturligt!</h1>
                 <p style="font-size:21px">Genom närproduktion och användning av färska ekologiska oraffinerade råvaror som framställts rättvist och i harmoni med naturen, kan Dr Hardmans hudkrämer vara av högsta kvalitet utan att innehålla konserveringsmedel eller andra tillsatsämnen. <br>Huden är kroppens största organ vars syfte är att avgifta kroppen och skydda vårt inre; muskler, blod och övriga organ mot främmande ämnen. Ge den ren mat!
@@ -532,6 +542,7 @@
 
 
 </section>
+
       </div> <!-- wrapper -->
     </div> <!-- page content -->
   </div>

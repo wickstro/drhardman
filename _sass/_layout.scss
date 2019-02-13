@@ -40,7 +40,7 @@ img {
   }
 }
 
-header {
+header.site-header {
   width: 10%;
   min-width: 91px;
   padding-left: 20px;
@@ -92,22 +92,22 @@ a {
 a:hover {
   text-decoration: none;
   outline: none;
-  color: $darkbrown-color-light;
+  color: $dark-color-light;
 }
 
 a:active {
   text-decoration: none;
-  color: $darkbrown-color-light;
+  color: $dark-color-light;
 }
 a:focus {
   outline: none;
   text-decoration: none;
-  color: $darkbrown-color-light;
+  color: $dark-color-light;
 }
 
 li.active a {
   text-decoration: none;
-  color: $darkbrown-color-light;
+  color: $dark-color-light;
 }
 
 li {
@@ -162,14 +162,11 @@ hr.primary, hr.light, hr.dark {
   border-bottom: none;
 }
 
-.orange {
-  color:  $orange-color;
-}
-
 
 
 //* GENERAL STYLES *//
-.img-fluid {
+
+img.img-fluid {
   max-width: 100%;
   height: auto;
 }
@@ -200,16 +197,32 @@ hr.primary, hr.light, hr.dark {
 .black {
   background-color: #000000;
 }
+.grey {
+  background-color: rgba(90, 93, 95, 0.87);
+}
+.black04 {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.black06 {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.black08 {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.orange {
+  color:  $orange-color;
+}
+
+
 
 
 button, .button {
-  border-radius: 25px;
-  border: 3px solid $blue;
+  border: 2px solid $blue;
   font-weight: 400;
   font-size: 21px;
   padding: 0.5em 2em;
   box-shadow: none;
-  background-color: $blue;
+  background-color: transparent;
   color: $white-color;
   text-shadow: 1px 1px #5A5D5F;
   text-transform: none;
@@ -217,7 +230,7 @@ button, .button {
   marin-top: 1em;
 
   &:hover {
-  background-color: transparent;
+  background-color: $blue;
     color: $white-color;
 
   }
@@ -256,9 +269,9 @@ button, .button {
 
   li a, .dropbtn {
     display: inline-block;
-    color: white;
+    color: $white-color;
     text-align: center;
-    padding: 7px 8px;
+    padding: 0 8px;
     text-decoration: none;
   }
 
@@ -273,14 +286,14 @@ button, .button {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: $white-color;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
 
   .dropdown-content a {
-    color: black;
+    color: $dark-color;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -314,10 +327,25 @@ button, .button {
 
   //* SECTION STYLES *//
 
+.sloganbox {
+  h1.slogan {
+    color: $white-color;
+    font-size: 46px;
+    font-family: flood-std, sans-serif;
+  }
+}
+ .sloganbox#sloganbox10 {
+    min-height:40vh;
+    h1.slogan {
+      transform: rotate(350deg);
+    }
+  }
+
   .hero {
     h1 {
       color: $white-color;
       font-size: 46px;
+      padding-bottom: 6em;
     }
 
     p {
@@ -327,12 +355,6 @@ button, .button {
       font-size: 21px;
       padding-bottom: 1em;
     }
-
-  }
-
-  .heroimg {
-    max-height:260px;
-    padding-top: 20px;
 
   }
 
@@ -365,19 +387,13 @@ button, .button {
     margin-bottom: 27px;
   }
 
-  //* ASIDE STYLES *//
 
-  aside {
-    position: relative;
-    background-size: cover;
-    background-position: center top;
-    overflow: hidden;
-    min-height: 550px;
+  //* ARTICLE STYLES *//
 
-  }
 
-  //* PAGE STYLES *//
-
+article {
+  z-index: 5;
+}
 
   ul.sidnavi {
     padding-top: 10px;
@@ -393,13 +409,13 @@ button, .button {
         font-size: $small-font-size;
 
         &:active {
-          color: $darkbrown-color;
+          color: $dark-color-light;
         }
         &:hover {
-          color: $darkbrown-color-light;
+          color: $dark-color-light;
         }
         &:focus {
-          color: $darkbrown-color;
+          color: $dark-color-light;
           text-decortion: none;
         }
       }
@@ -410,13 +426,13 @@ button, .button {
   .listsida a {
     font-size: 21px;
     &.active a {
-      color: $darkbrown-color;
+      color: $dark-color;
     }
     &:hover {
-      color: $darkbrown-color-light;
+      color: $dark-color-light;
     }
     &:focus {
-      color: $darkbrown-color;
+      color: $dark-color-light;
       text-decortion: none;
     }
   }
@@ -591,7 +607,8 @@ button, .button {
   }
 
 
-.bg-1 {
-  background: url('../img/dome.jpg');
-}
+  .bg-1 {
+    background: url('../img/dome.jpg');
+  }
+
 
