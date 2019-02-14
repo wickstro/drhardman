@@ -38,9 +38,13 @@ img {
     flex-wrap: wrap;
     max-width: 100%;
   }
+  @media(min-width:1600px) {
+    max-width:70% ;
+  }
 }
 
 header.site-header {
+  z-index: 4;
   width: 10%;
   min-width: 91px;
   padding-left: 20px;
@@ -55,11 +59,14 @@ header.site-header {
   max-width: 80%;
   padding-left: 20px;
   padding-right: 20px;
+  z-index: 3;
   @media(max-width:$tablet) {
-   width: 70%;
+   max-width: 70%;
   }
   @media(max-width:$mobile) {
-    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -75,18 +82,21 @@ p {
 
 p {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 300;
   color: $text-color;
   font-size: $base-font-size;
+  margin-bottom:1.1rem;
+  letter-spacing: 1px;
     &.large-font-size {
       font-size: $large-font-size;
     }
 }
 
 a {
-  color: $orange-color;
+  color: $turkos;
   text-decoration: none;
   font-size: $base-font-size;
+  letter-spacing: 1px;
 }
 
 a:hover {
@@ -119,28 +129,33 @@ h1 {
   font-family: "bebas-neue",sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
-  letter-spacing: 2px;
+  font-size: 3rem;
+  letter-spacing: 4px;
   color: $text-color;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 0rem;
 }
 
 h2 {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 2rem;
   color:  $text-color;
+  margin-bottom: 1rem;
 }
 
 
 h3 {
-  font-weight: 400;
+  font-weight: 300;
+  font-size: 2rem;
   color: $text-color;
+  margin-bottom: 1rem;
 }
 
 h4 {
-  font-weight: 700;
+  font-weight: 300;
+  font-size: 1.8rem;
   color: $text-color;
+  margin-bottom: 0.6rem;
 }
 
 sup {
@@ -155,6 +170,9 @@ hr.primary {
 
 .faktarutarubrik {
   font-family: flood-std, sans-serif;
+  letter-spacing: 0;
+  line-height: 4rem;
+  margin-bottom: 1.5rem;
 }
 
 hr.primary, hr.light, hr.dark {
@@ -198,7 +216,7 @@ img.img-fluid {
   background-color: #000000;
 }
 .grey {
-  background-color: rgba(90, 93, 95, 0.87);
+  background-color: rgba(38, 41, 43, 0.87);
 }
 .black04 {
   background-color: rgba(0, 0, 0, 0.4);
@@ -210,7 +228,7 @@ img.img-fluid {
   background-color: rgba(0, 0, 0, 0.8);
 }
 .orange {
-  color:  $orange-color;
+  color:  $turkos;
 }
 
 
@@ -223,16 +241,17 @@ button, .button {
   padding: 0.5em 2em;
   box-shadow: none;
   background-color: transparent;
-  color: $white-color;
-  text-shadow: 1px 1px #5A5D5F;
   text-transform: none;
   margin-bottom: 1rem;
-  marin-top: 1em;
+  margin-top: 1em;
 
   &:hover {
   background-color: $blue;
-    color: $white-color;
+    color: $light-color;
 
+  }
+  a {
+    color: $text-color;
   }
 }
 
@@ -269,14 +288,14 @@ button, .button {
 
   li a, .dropbtn {
     display: inline-block;
-    color: $white-color;
+    color: $light-color;
     text-align: center;
     padding: 0 8px;
     text-decoration: none;
   }
 
   li a:hover, .dropdown:hover .dropbtn {
-    background-color: $orange-color;
+    background-color: $turkos;
   }
 
   li.dropdown {
@@ -286,7 +305,7 @@ button, .button {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: $white-color;
+    background-color: $light-color;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -329,10 +348,18 @@ button, .button {
 
 .sloganbox {
   h1.slogan {
-    color: $white-color;
-    font-size: 46px;
+    color: $light-color;
+    font-size: 4rem;
     font-family: flood-std, sans-serif;
   }
+  p {
+    text-shadow: 1px 1px #5A5D5F;
+    font-weight: 400;
+    color: $light-color;
+    font-size: 21px;
+    padding-bottom: 1em;
+  }
+
 }
  .sloganbox#sloganbox10 {
     min-height:40vh;
@@ -341,22 +368,152 @@ button, .button {
     }
   }
 
-  .hero {
-    h1 {
-      color: $white-color;
-      font-size: 46px;
-      padding-bottom: 6em;
-    }
-
-    p {
-      text-shadow: 1px 1px #5A5D5F;
-      font-weight: 400;
-      color: $white-color;
-      font-size: 21px;
-      padding-bottom: 1em;
-    }
-
+.sloganbox#sloganboxindex {
+  min-height:50vh;
+  h1.slogan {
+    transform: rotate(350deg);
+    padding-bottom: 10vh;
+    padding-top: 4rem;
   }
+}
+
+//* FLIP CARD STYLES *//
+
+.produktkort {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 210px;
+  height: 210px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  padding-bottom:20px;
+  @media(max-width:$mobile) {
+    width: 185px;
+    height: 185px;
+    padding-bottom:10px;
+  }
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  img {
+    max-width: 200px;
+  }
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  border-radius: 6px;
+  h1 {
+    margin-top: 20px;
+    line-height: 4rem;
+    letter-spacing: 2px;
+  }
+}
+.flip-card-front.ten {
+    background-color: $grey;
+}
+.flip-card-front.twenty2 {
+    background-color: $dark-color;
+}
+.flip-card-front.twenty3 {
+  background-color: $yellow;
+}
+.flip-card-front.twenty4 {
+  background-color: $brown;
+}
+.flip-card-front.twenty5 {
+  background-color: $green;
+}
+.flip-card-front.twenty6 {
+  background-color: $pink;
+}
+.flip-card-front.thirty {
+  background-color: $green;
+}
+.flip-card-front.thirty1 {
+  background-color: $lightblue;
+}
+.flip-card-front.thirty2 {
+  background-color: $purple;
+}
+.flip-card-front.forty4 {
+  background-color: $purple;
+}
+.flip-card-front.forty5 {
+  background-color: $cherry;
+}
+.flip-card-front.forty7 {
+  background-color: $dark-color;
+}
+.flip-card-front.forty8 {
+  background-color: $purple;
+}
+.flip-card-front.forty9 {
+  background-color: $light-orange;
+}
+.flip-card-front.fifty5 {
+  background-color: $yellow;
+}
+.flip-card-front.fifty6 {
+  background-color: $pink;
+}
+.flip-card-front.sixty6 {
+  background-color: $red;
+}
+.flip-card-front.sixty7 {
+  background-color: $cherry;
+}
+.flip-card-front.seventy {
+  background-color: $dark-color;
+}
+.flip-card-front.seventy1 {
+  background-color: $orange;
+}
+.flip-card-front.eighty {
+  background-color: $orange;
+}
+.flip-card-front.eighty1 {
+  background-color: $blue;
+}
+.flip-card-front.ninty3 {
+  background-color: $cherry;
+}
+
+
+  /* Style the back side */
+  .flip-card-back {
+    background-color: none;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
 
   .produkter {
     padding: $spacing-unit;
@@ -376,7 +533,7 @@ button, .button {
     font-family: "bebas-neue",sans-serif;
     font-style: normal;
     font-weight: 400;
-    color: $orange-color;
+    color: $turkos;
   }
 
   .buy-box {
@@ -391,9 +548,9 @@ button, .button {
   //* ARTICLE STYLES *//
 
 
-article {
-  z-index: 5;
-}
+  article {
+    z-index: 5;
+  }
 
   ul.sidnavi {
     padding-top: 10px;
@@ -437,8 +594,8 @@ article {
     }
   }
 
-  .produktprofilbild {
-    max-width: 100%;
+  img.img-fluid.produktprofilbild {
+    max-width: 300px;
   }
 
 
@@ -465,7 +622,6 @@ article {
 
     &>li {
       color:  $text-color;
-      font-size: 18px;
     }
   }
 
@@ -490,7 +646,7 @@ article {
   }
 
   .footerh1 {
-    color: $white-color;
+    color: $light-color;
   }
 
 
@@ -512,10 +668,10 @@ article {
 
 
       & > a, a.btn-drh{
-        color: $white-color;
+        color: $light-color;
 
         &:hover {
-          color: $orange-color;
+          color: $turkos;
         }
 
       }
@@ -592,7 +748,7 @@ article {
 
     footer h1 {
       font-size: 22px;
-      color: $white-color;
+      color: $light-color;
     }
 
     .produktprofilbild {
@@ -603,12 +759,11 @@ article {
       margin-bottom: 16px;
     }
 
-
   }
-
 
   .bg-1 {
     background: url('../img/dome.jpg');
   }
+
 
 

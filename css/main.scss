@@ -7,28 +7,36 @@
 
 // Our variables
 $base-font-family: 'Cronos Pro', sans-serif;
-$base-font-size:   18px;
-$base-font-weight: 200;
+$base-font-size:   1.4rem;
+$base-font-weight: 300;
 $small-font-size:  $base-font-size * 0.875;
 $large-font-size:  $base-font-size * 1.475;
 $base-line-height: 1.6;
 
-$spacing-unit:     17px;
-$base-padding:      27px;
-$dubbel-padding:    54px;
+$spacing-unit:      1rem;
+$base-padding:      2rem;
+$dubbel-padding:    4rem;
 
-$text-color:        #fcfaf8;
+$text-color:        #ffffff;
 $background-color:  #000000;
-$orange-color:      #00bdbe;
-$white-color:       #fcfaf8;
+$turkos:            #00bdbe;
+$light-color:       #fcfaf8;
 $dark-color:        #131314;
-$dark-color-light: #6e99d4;
-$dark-color-dark:  #6e99d4;
+$dark-color-light:  #6e99d4;
+$dark-color-dark:   #6e99d4;
 $beige:             #e0c09f;
-$green:             #71a82b;
-$sidnavi:           #937d7a;
+$green:             #00a14b;
+$brown:             #8c715d;
 $blue:              #6e99d4;
-
+$grey:              #272727;
+$pink:              #f6adcd;
+$purple:            #7c77ad;
+$cherry:            #d11f5c;
+$orange:            #f15a29;
+$light-orange:      #fcbb76;
+$yellow:            #ffcb05;
+$red:               #ed1c24;
+$lightblue:         #90d7ec;
 
 
 // Use media queries like this:
