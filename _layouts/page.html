@@ -2,30 +2,26 @@
 layout: default
 comments: true
 ---
-        <ul class="sidnavi">
-          {% if page.type  == "produkter" %}
-            <li class="listsidnavi"><a class="text-capitalize" href="/#page-produkter">{{ page.type }}</a></li>
-            <li class="active"><a href="#page-top">{{ page.title }}</a></li>
-            {% endif %}
-          {% if page.type  == "ingredienser" %}
-            <li class="listsidnavi"><a class="text-capitalize" href="/ingredienser/">{{ page.type }}</a></li>
-            <li class="active"><a href="#page-top">{{ page.title }}</a></li>
-          {% endif %}
-        </ul>
-
-{{ content }}
-
-<!--<section class="padding">
-        <h4>Frågor </h4><p>Ring 0407642085<br>Skriv <a type="email" href="mailto:lotta.hardman@gmail.com?subject=Fråga om DrHardmans produkter">lotta.hardman@gmail.com</a></p>
-        <hr class="primary" />
-        <h4>Kommentera och diskutera produkten här:</h4>
-</section>-->
-<section class="fbandup">
+<ul class="sidnavi">
+    {% if page.type  == "produkter" %}
+    <li class="listsidnavi"><a class="text-capitalize" href="/#page-produkter">{{ page.type }}</a></li>
+    <li class="active"><a href="#page-top">{{ page.title }}</a></li>
+    {% endif %}
+    {% if page.type  == "ingredienser" %}
+    <li class="listsidnavi"><a class="text-capitalize" href="/ingredienser/">{{ page.type }}</a></li>
+    <li class="active"><a href="#page-top">{{ page.title }}</a></li>
+    {% endif %}
+</ul>
+<main>
+    {{ content }}
+    <a class="up" href="#page-top"><i class="fa fa-angle-double-up" aria-hidden="true"></i> Upp</a>
+    </article>
+</main>
+<aside class="padding">
     <div
             class="fb-like"
             data-share="true"
             data-width="450"
             data-show-faces="true">
     </div>
-    <a class="up" href="#page-top"><i class="fa fa-angle-double-up" aria-hidden="true"></i> Upp</a>
-</section>
+</aside>

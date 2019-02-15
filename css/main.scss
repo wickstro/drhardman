@@ -25,17 +25,17 @@ $dark-color:        #131314;
 $dark-color-light:  #96c1ff;
 $dark-color-dark:   #6e99d4;
 $beige:             #e0c09f;
-$green:             #00a14b;
-$brown:             #8c715d;
-$blue:              #6e99d4;
-$grey:              #272727;
-$pink:              #f6adcd;
-$purple:            #7c77ad;
-$cherry:            #d11f5c;
-$orange:            #f15a29;
+$green: rgba(0, 161, 75, 0.6);
+$brown: rgba(140, 113, 93, 0.7);
+$blue: rgba(110, 153, 212, 0.85);
+$grey: rgba(39, 39, 39, 0.65);
+$pink: rgba(246, 173, 205, 0.61);
+$purple: rgba(124, 119, 173, 0.71);
+$cherry: rgba(209, 31, 92, 0.56);
+$orange: rgba(241, 90, 41, 0.6);
 $light-orange:      #fcbb76;
-$yellow:            #ffcb05;
-$red:               #ed1c24;
+$yellow: rgba(255, 203, 5, 0.8);
+$red: rgba(237, 28, 36, 0.75);
 $lightblue:         #90d7ec;
 
 
@@ -50,7 +50,7 @@ $lightblue:         #90d7ec;
 
 $mobile: 600px;
 $tablet: 800px;
-$laptop: 1024px;
+$laptop: 1340px;
 
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
