@@ -1,90 +1,98 @@
 
 //* DOC STYLES *//
 
-html, body {
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
+html {
+  height: 100%;
   overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  height:100%;
+  padding: 0;
+  margin: 0;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+  background-color: $background-color;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
   -ms-overflow-style: scrollbar;
-  color: $background-color;
-  background: url('../img/bgs/darklady.jpg')  no-repeat center center fixed;
+  background: url('../img/bgs/orange.jpg')  no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-body #page-id-1 {
-  background: url('../img/bgs/dawn.jpg') center top;
 
+
+body#page-1 {
+  background: url('../img/bgs/dawn.jpg')  no-repeat center center fixed;
 }
+
+body#page-2 {
+  background: url('../img/bgs/darklady.jpg')  no-repeat center center fixed;
+}
+body#page-3 {
+  background: url('../img/bgs/darklady.jpg')  no-repeat center center fixed;
+}
+
 
 img {
   image-rendering: -webkit-optimize-contrast;
 }
 
 #sitewrapper {
-  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
-  @media(max-width:$tablet) {
-    max-width: 768px;
-  }
-  @media(max-width:$mobile) {
-    flex-wrap: wrap;
-    max-width: 100%;
-  }
-  @media(min-width:1600px) {
-    max-width:70% ;
-  }
-}
 
-header.site-header {
-  z-index: 4;
-  width: 10%;
-  min-width: 91px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: rgba(0, 0, 0, 0.4);
-  @media(max-width:$mobile) {
-    width: 100%;
-  }
-}
+  header.site-header {
+    z-index: 4;
+    width: 10%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 100vh;
 
-.page-content {
-  max-width: 80%;
-  padding-left: 20px;
-  padding-right: 20px;
-  z-index: 3;
-  @media(max-width:$tablet) {
-   max-width: 70%;
+    @media (max-width: $mobile) {
+      width: 100%;
+      position: relative;
+      height: auto;
+    }
   }
-  @media(max-width:$mobile) {
-    max-width: 100%;
-    padding-left: 0;
-    padding-right: 0;
+
+  .page-content {
+    width: 70%;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 3;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }
 
 //* FONT STYLES *//
-body,
-h2,
-h3,
-h4,
-p {
-  font-family: $base-font-family;
-  line-height:$base-line-height;
-}
+
 
 p {
-  font-style: normal;
   font-weight: 300;
   color: $text-color;
-  font-size: $base-font-size;
   margin-bottom:1.1rem;
   letter-spacing: 1px;
     &.large-font-size {
@@ -93,7 +101,7 @@ p {
 }
 
 a {
-  color: $turkos;
+  color: $link-color;
   text-decoration: none;
   font-size: $base-font-size;
   letter-spacing: 1px;
@@ -131,13 +139,13 @@ h1 {
   font-weight: 400;
   font-size: 3rem;
   letter-spacing: 4px;
-  color: $text-color;
+  color: $link-color;
   text-transform: uppercase;
-  margin-bottom: 0rem;
+  margin-bottom: 0;
 }
 
 h2 {
-  font-weight: 700;
+  font-weight: 300;
   font-size: 2rem;
   color:  $text-color;
   margin-bottom: 1rem;
@@ -153,7 +161,7 @@ h3 {
 
 h4 {
   font-weight: 300;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: $text-color;
   margin-bottom: 0.6rem;
 }
@@ -176,7 +184,7 @@ hr.primary {
 }
 
 hr.primary, hr.light, hr.dark {
-  margin: 25px auto;
+  margin: 0 auto 1rem auto;
   border-bottom: none;
 }
 
@@ -228,7 +236,7 @@ img.img-fluid {
   background-color: rgba(0, 0, 0, 0.8);
 }
 .orange {
-  color:  $turkos;
+  color:  $pink;
 }
 
 
@@ -258,26 +266,44 @@ button, .button {
 
 //* HEADER STYLES *//
 .site-header .wrapper {
-  .logo img.logoimg {
-    max-width: 80px;
-    padding-top: $base-padding;
-    padding-bottom: $base-padding;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    .logo img.logoimg {
+      max-width: 80px;
+      padding-top: $base-padding;
+      padding-bottom: $base-padding;
+      @media(max-width:$mobile) {
+        padding-bottom: 0;
+        max-width: 40px;
+      }
+    }
+    .logonamn img.logonamnimg {
+      max-width: 40px;
+      padding-bottom: $base-padding;
+      @media(max-width:$mobile) {
+          display: none;
+        }
+      }
+
+  a.namn {
+    display: none;
+    @media(max-width:$mobile) {
+      display: block;
+    }
   }
-  .logonamn img.logonamnimg {
-    max-width: 40px;
-    padding-bottom: $base-padding;
-  }
+
   ul.navi {
     padding-top: $dubbel-padding;
+    @media(max-width:$mobile) {
+      padding-top: $base-padding;
+    }
   }
 }
 
     //* NAV STYLES *//
-
-  .icon {
-    display: inline-block;
-    /* size, color, etc. */
-  }
 
   ul.navi {
     list-style-type: none;
@@ -287,19 +313,9 @@ button, .button {
   }
 
   li a, .dropbtn {
-    display: inline-block;
-    color: $light-color;
     text-align: center;
     padding: 0 8px;
     text-decoration: none;
-  }
-
-  li a:hover, .dropdown:hover .dropbtn {
-    background-color: $turkos;
-  }
-
-  li.dropdown {
-    display: inline-block;
   }
 
   .dropdown-content {
@@ -308,19 +324,19 @@ button, .button {
     background-color: $light-color;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 4;
   }
 
   .dropdown-content a {
     color: $dark-color;
-    padding: 12px 16px;
+    padding: 6px 8px;
     text-decoration: none;
     display: block;
     text-align: left;
   }
 
   .dropdown-content a:hover {
-    background-color: #f1f1f1
+    background-color: #b1b1b1;
   }
 
   .dropdown:hover .dropdown-content {
@@ -347,24 +363,33 @@ button, .button {
   //* SECTION STYLES *//
 
 .sloganbox {
+  max-width: 80%;
+  margin: 0 auto;
   h1.slogan {
     color: $light-color;
     font-size: 4rem;
     font-family: flood-std, sans-serif;
+    @media (max-width: $tablet) {
+      font-size: 2rem;
+      max-width: 90%;
+    }
   }
-  p {
-    text-shadow: 1px 1px #5A5D5F;
-    font-weight: 400;
-    color: $light-color;
-    font-size: 21px;
-    padding-bottom: 1em;
+  @media (max-width:$tablet) {
+    max-width: 90%;
+    margin: 0 auto;
   }
-
+  @media (max-width:$mobile) {
+    max-width: 100%;
+  }
 }
+
  .sloganbox#sloganbox10 {
     min-height:40vh;
     h1.slogan {
       transform: rotate(350deg);
+      @media (max-width: $mobile) {
+        transform: rotate(5deg);
+      }
     }
   }
 
@@ -373,8 +398,17 @@ button, .button {
   h1.slogan {
     transform: rotate(350deg);
     padding-bottom: 10vh;
-    padding-top: 4rem;
+    padding-top: 3rem;
+    @media (max-width: $mobile) {
+      padding-top: 0;
+      transform: rotate(355deg);
+    }
   }
+}
+
+
+header h1 {
+  color: $link-color;
 }
 
 //* FLIP CARD STYLES *//
@@ -382,9 +416,12 @@ button, .button {
 .produktkort {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding-top: 3rem;
+  @media (max-width: $mobile) {
+    justify-content: space-around;
+  }
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -397,7 +434,7 @@ button, .button {
   @media(max-width:$mobile) {
     width: 185px;
     height: 185px;
-    padding-bottom:10px;
+    padding-bottom:14px;
   }
 }
 
@@ -431,9 +468,13 @@ button, .button {
 .flip-card-front {
   border-radius: 6px;
   h1 {
+    color: $link-color;
     margin-top: 20px;
     line-height: 4rem;
     letter-spacing: 2px;
+  }
+  p {
+    color: $link-color;
   }
 }
 .flip-card-front.ten {
@@ -524,8 +565,12 @@ button, .button {
   }
 
   img.cert {
-    max-width: 100%;
+    max-width: 70%;
     display:block;
+    margin: 0 auto;
+    @media(max-width:$mobile) {
+      max-width: 100%;
+    }
   }
 
 
@@ -533,7 +578,7 @@ button, .button {
     font-family: "bebas-neue",sans-serif;
     font-style: normal;
     font-weight: 400;
-    color: $turkos;
+    color: $link-color;
   }
 
   .buy-box {
@@ -634,22 +679,21 @@ button, .button {
   }
 
   //* FOOTER STYLES *//
+footer {
+  margin-top: 4rem;
+  .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-end;
 
-  .footerlogo img {
-    padding-bottom: 40px;
-    max-width: 60px;
+    img.icon {
+      display: inline-block;
+      max-width: 60px;
+    }
   }
 
-  .site-footer {
-    bottom:0px;
-    padding-top: $spacing-unit;
-  }
-
-  .footerh1 {
-    color: $light-color;
-  }
-
-
+}
   //* JUMPTARGET STYLES *//
 
   .jumptarget:before {
@@ -658,30 +702,16 @@ button, .button {
     height: 80px; /* fixed header height*/
     margin: -80px 0 0; /* negative fixed header height */
   }
+  .fbandup {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 
-  ul.navi-footer {
-    padding-left:0px;
-
-    & > li, li.btn-group {
-      display: inline;
-      padding-right: 30px;
-
-
-      & > a, a.btn-drh{
-        color: $light-color;
-
-        &:hover {
-          color: $turkos;
-        }
-
-      }
+    .fb-like {
+      padding-top: 20px;
+      padding-bottom: 15px;
+      max-width: 70%;
     }
-  }
-
-  .fb-like {
-    padding-top: 20px;
-    padding-bottom: 15px;
-    max-width: 99%;
   }
 
 
@@ -696,9 +726,9 @@ button, .button {
   }
 
   @include media-query($tablet) {
-    .produktprofilbild {
-      max-width: 50%;
-    }
+   p, a, li {
+     font-size: $small-font-size;
+   }
     .faktaruta {
       margin-bottom: 16px;
     }
@@ -716,6 +746,7 @@ button, .button {
       padding-top: $base-padding;
       padding-bottom: $base-padding;
     }
+
 
     h1, .hero h1 {
       font-size: 30px;
@@ -751,12 +782,16 @@ button, .button {
       color: $light-color;
     }
 
+
     .produktprofilbild {
       max-width: 80%;
     }
 
     .faktaruta {
       margin-bottom: 16px;
+    }
+    .fb-like {
+      max-width: 98%;
     }
 
   }
