@@ -58,15 +58,43 @@ body#page-23 {
   -o-background-size: cover;
   background-size: cover;
 }
-body#page-44 {
+body#page-24 {
+  background: url('../img/bgs/pojke.jpg')  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body#page-25 {
+  background: url('../img/bgs/greenleaf.jpg')  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body#page-26 {
   background: url('../img/bgs/purplerain.jpg')  no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
+body#page-44 {
+  background: url('../img/bgs/trappa2.jpg')  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body#page-45 {
+  background: url('../img/bgs/tunnel.jpg')  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 body#page-66 {
-  background: url('../img/bgs/orange.jpg')  no-repeat center center fixed;
+  background: url('../img/bgs/autumnplant.jpg')  no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -82,6 +110,13 @@ body#page-56 {
   background-size: cover;
 }
 
+body#braattveta {
+  background: url('../img/bgs/soffa.jpg')  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 img {
   image-rendering: -webkit-optimize-contrast;
@@ -328,7 +363,7 @@ button, .button {
   }
 
   ul.navi {
-    padding-top: $dubbel-padding;
+    padding-top: $spacing-unit;
     @media(max-width:$mobile) {
       padding-top: $base-padding;
     }
