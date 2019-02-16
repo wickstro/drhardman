@@ -30,7 +30,7 @@ body {
 }
 
 body#page-1 {
-  background: url('../img/bgs/kaktus.jpg')  no-repeat center center fixed;
+  background: url('../img/bgs/nightsky.jpg')  no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -73,7 +73,7 @@ body#page-25 {
   background-size: cover;
 }
 body#page-26 {
-  background: url('../img/bgs/purplerain.jpg')  no-repeat center center fixed;
+  background: url('../img/bgs/woodandplants.jpg')  no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -167,7 +167,6 @@ img {
 
 //* FONT STYLES *//
 
-
 p {
   font-weight: 300;
   color: $text-color;
@@ -188,22 +187,22 @@ a {
 a:hover {
   text-decoration: none;
   outline: none;
-  color: $dark-color-light;
+  color: $blue-color;
 }
 
 a:active {
   text-decoration: none;
-  color: $dark-color-light;
+  color: $blue-color;
 }
 a:focus {
   outline: none;
   text-decoration: none;
-  color: $dark-color-light;
+  color: $blue-color;
 }
 
 li.active a {
   text-decoration: none;
-  color: $dark-color-light;
+  color: $blue-color;
 }
 
 li {
@@ -223,10 +222,14 @@ h1 {
 }
 
 h2 {
-  font-weight: 300;
-  font-size: 2rem;
-  color:  $text-color;
-  margin-bottom: 1rem;
+  font-family: "bebas-neue",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  letter-spacing: 4px;
+  color: $link-color;
+  text-transform: uppercase;
+  margin-bottom: 0;
 }
 
 
@@ -249,7 +252,7 @@ sup {
 }
 
 hr.primary {
-  border-top: 1px solid $blue;
+  border-top: 1px solid $blue-color;
   margin-left: auto;
   margin-right: auto;
 }
@@ -257,7 +260,6 @@ hr.primary {
 .faktarutarubrik {
   font-family: flood-std, sans-serif;
   letter-spacing: 0;
-  line-height: 4rem;
   margin-bottom: 1.5rem;
 }
 
@@ -427,18 +429,26 @@ button, .button {
   }
 
 
-  //* SECTION STYLES *//
+  //* SLOGAN BOX STYLES *//
 
 .sloganbox {
   max-width: 80%;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
   h1.slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     color: $light-color;
     font-size: 4rem;
     font-family: flood-std, sans-serif;
     @media (max-width: $tablet) {
-      font-size: 2rem;
+      font-size: 3rem;
+      line-height: 3.2rem;
       max-width: 90%;
+      margin: 0 auto;
     }
   }
   @media (max-width:$tablet) {
@@ -451,28 +461,33 @@ button, .button {
 }
 
  .sloganbox#sloganbox10 {
-    min-height:50vh;
+    min-height:40vh;
     h1.slogan {
-      transform: rotate(350deg);
+      transform: rotate(-10deg);
       @media (max-width: $mobile) {
-        transform: rotate(5deg);
+        transform: rotate(-5deg);
       }
     }
+   @media (max-width:$tablet) {
+     min-height:30vh;
+   }
+   @media (max-width: $mobile) {
+     min-height:20vh;
+   }
   }
 
 .sloganbox#sloganboxindex {
   min-height:50vh;
   h1.slogan {
-    transform: rotate(350deg);
-    padding-bottom: 10vh;
-    font-size: 2rem;
+    transform: rotate(-10deg);
     @media (max-width: $mobile) {
-      padding-top: 0;
-      transform: rotate(355deg);
+      transform: rotate(-5deg);
+      font-size: 2rem;
     }
   }
 }
 
+//* SECTION STYLES *//
 
 header h1 {
   color: $link-color;
@@ -498,6 +513,11 @@ header h1 {
   height: 210px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   padding-bottom:20px;
+  @media(max-width:$tablet) {
+    width: 195px;
+    height: 195px;
+    padding-bottom:1rem;
+  }
   @media(max-width:$mobile) {
     width: 185px;
     height: 185px;
@@ -659,11 +679,12 @@ header h1 {
 
   //* ARTICLE STYLES *//
 
-
   article {
     z-index: 5;
     p.small {
       font-size: $small-font-size;
+      line-height: 1.1rem;
+      letter-spacing: 0;
     }
   }
 
@@ -681,13 +702,13 @@ header h1 {
         font-size: $small-font-size;
 
         &:active {
-          color: $dark-color-light;
+          color: $blue-color;
         }
         &:hover {
-          color: $dark-color-light;
+          color: $blue-color;
         }
         &:focus {
-          color: $dark-color-light;
+          color: $blue-color;
           text-decortion: none;
         }
       }
@@ -701,10 +722,10 @@ header h1 {
       color: $dark-color;
     }
     &:hover {
-      color: $dark-color-light;
+      color: $blue-color;
     }
     &:focus {
-      color: $dark-color-light;
+      color: $blue-color;
       text-decortion: none;
     }
   }
@@ -727,18 +748,20 @@ header h1 {
     max-width: 100%;
   }
 
-  h1.faktarutarubrik {
+  h1.faktarutarubrik, h2.faktarutarubrik {
     transform: rotate -3 deg;
-    color: $blue;
+    color: $blue-color;
   }
 
   ul.ingredienslista {
     padding-left: 17px;
     padding-bottom: 17px;
-
-    &>li {
-      color:  $text-color;
+    li {
+      color: $light-color;
     }
+  }
+  p.ingredienser {
+    color:  $light-color;
   }
 
   ul.plus {
@@ -764,6 +787,11 @@ footer {
     img.icon {
       display: inline-block;
       max-width: 60px;
+    }
+    @media(max-width:$mobile) {
+      footer h1 {
+        font-size: 22px;
+      }
     }
   }
 
@@ -807,6 +835,12 @@ footer {
       margin-bottom: 16px;
     }
 
+    h1, .hero h1, .buy-box h1 {
+      font-size: 2rem;
+      line-height: 2.4rem;
+      margin-bottom: 0.5rem;
+    }
+
   }
 
   @include media-query($mobile) {
@@ -821,25 +855,6 @@ footer {
       padding-bottom: $base-padding;
     }
 
-
-    h1, .hero h1, h1.faktarutarubrik, .buy-box h1 {
-      font-size: 2rem;
-      line-height: 2rem;
-      margin-bottom: 0.5rem;
-    }
-
-    h2 {
-      font-size: 24px;
-    }
-    h3 {
-      font-size: 20px;
-    }
-
-    footer h1 {
-      font-size: 22px;
-      color: $light-color;
-    }
-
     img.img-fluid.produktprofilbild {
       max-width: 80%;
       padding: 0.5rem 0 1rem 0;
@@ -848,6 +863,7 @@ footer {
     .faktaruta {
       margin-bottom: 16px;
     }
+
     .fb-like {
       max-width: 98%;
     }
