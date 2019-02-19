@@ -155,7 +155,7 @@ img {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    height: 95vh;
+    height: 100vh;
     @media (max-width: $tablet) {
       width: 15%;
     }
@@ -163,6 +163,7 @@ img {
     @media (max-width: $mobile) {
       width: 100%;
       position: relative;
+      height: auto;
     }
   }
 
@@ -479,29 +480,6 @@ button, .button {
     justify-content: space-around;
   }
 }
-.produktkort-singel {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  padding-bottom: $base-padding;
-
-  .flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 300px;
-    .flip-card-front, .flip-card-back {
-      img {
-        max-width: 300px;
-      }
-    }
-    @media (max-width: $tablet) {
-      &.second {
-        display: none;
-      }
-    }
-  }
-}
-
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
@@ -543,238 +521,263 @@ button, .button {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  img {
-    max-width: 200px;
-  }
+  transform: rotateX(0deg);
+img {
+  max-width: 200px;
+}
 }
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  border-radius: 6px;
-  h1 {
-    color: $link-color;
-    margin-top: 20px;
-    line-height: 4rem;
-    letter-spacing: 2px;
-  }
-  p {
-    color: $link-color;
-  }
+border-radius: 6px;
+h1 {
+  color: $link-color;
+  margin-top: 20px;
+  line-height: 4rem;
+  letter-spacing: 2px;
+}
+p {
+  color: $link-color;
+}
 }
 .flip-card-front.ten {
-    background-color: $grey;
+  background-color: $grey;
 }
 .flip-card-front.twenty2 {
-    background-color: $dark-color;
+  background-color: $dark-color;
 }
 .flip-card-front.twenty3 {
-  background-color: $yellow;
+background-color: $yellow;
 }
 .flip-card-front.twenty4 {
-  background-color: $brown;
+background-color: $brown;
 }
 .flip-card-front.twenty5 {
-  background-color: $green;
+background-color: $green;
 }
 .flip-card-front.twenty6 {
-  background-color: $pink;
+background-color: $pink;
 }
 .flip-card-front.thirty {
-  background-color: $green;
+background-color: $green;
 }
 .flip-card-front.thirty1 {
-  background-color: $lightblue;
+background-color: $lightblue;
 }
 .flip-card-front.thirty2 {
-  background-color: $purple;
+background-color: $purple;
 }
 .flip-card-front.forty4 {
-  background-color: $purple;
+background-color: $purple;
 }
 .flip-card-front.forty5 {
-  background-color: $cherry;
+background-color: $cherry;
 }
 .flip-card-front.forty7 {
-  background-color: $dark-color;
+background-color: $dark-color;
 }
 .flip-card-front.forty8 {
-  background-color: $purple;
+background-color: $purple;
 }
 .flip-card-front.forty9 {
-  background-color: $light-orange;
+background-color: $light-orange;
 }
 .flip-card-front.fifty5 {
-  background-color: $yellow;
+background-color: $yellow;
 }
 .flip-card-front.fifty6 {
-  background-color: $pink;
+background-color: $pink;
 }
 .flip-card-front.sixty6 {
-  background-color: $red;
+background-color: $red;
 }
 .flip-card-front.sixty7 {
-  background-color: $cherry;
+background-color: $cherry;
 }
 .flip-card-front.seventy {
-  background-color: $dark-color;
+background-color: $dark-color;
 }
 .flip-card-front.seventy1 {
-  background-color: $orange;
+background-color: $orange;
 }
 .flip-card-front.eighty {
-  background-color: $orange;
+background-color: $orange;
 }
 .flip-card-front.eighty1 {
-  background-color: $blue;
+background-color: $blue;
 }
 .flip-card-front.ninty3 {
-  background-color: $cherry;
+background-color: $cherry;
 }
 
 
-  /* Style the back side */
-  .flip-card-back {
-    background-color: none;
-    color: white;
-    transform: rotateY(180deg);
-  }
+/* Style the back side */
+.flip-card-back {
+  background-color: none;
+  color: white;
+  transform: rotateY(180deg);
+}
 
+.produktkort-singel {
+display: flex;
+flex-flow: row wrap;
+justify-content: flex-start;
+padding-bottom: $base-padding;
 
-  .produkter {
-    padding: $spacing-unit;
-    min-height: 450px;
-    & > a > img {
-      max-width: 200px;
-    }
-  }
-
-  img.cert {
-    max-width: 70%;
-    display:block;
-    margin: 0 auto;
-    @media(max-width:$mobile) {
-      max-width: 100%;
-    }
-  }
-
-
-
-  .buy-box {
-    border-left: 1px solid $blue;
-    border-right: 1px solid $blue;
-    border-bottom: 1px solid $blue;
-    padding: 27px;
-    margin-bottom: 27px;
-  }
-
-
-  //* ARTICLE STYLES *//
-
-  article {
-    z-index: 5;
-    header h1 {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-    }
-    p.small {
-      font-size: $small-font-size;
-      line-height: 1.1rem;
-      letter-spacing: 0;
-    }
-    h2.om {
-      padding-top: $base-padding;
-    }
-    img.img-fluid.produktprofilbild {
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  .flip-card-front, .flip-card-back {
+    backface-visibility: hidden;
+    img {
       max-width: 300px;
     }
-    h2.pris{
-      font-family: "bebas-neue",sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      color: $link-color;
+  }
+  @media (max-width: $tablet) {
+    &.second {
+      display: none;
     }
-    .faktarutarubrik {
-      font-family: flood-std, sans-serif;
-      letter-spacing: 0;
-      margin-bottom: 1.5rem;
-      padding-top: $base-padding;
-    }
+  }
+}
+}
 
+
+.produkter {
+  padding: $spacing-unit;
+  min-height: 450px;
+  & > a > img {
+    max-width: 200px;
+  }
+}
+
+img.cert {
+  max-width: 70%;
+  display:block;
+  margin: 0 auto;
+  @media(max-width:$mobile) {
+    max-width: 100%;
+  }
+}
+
+
+
+.buy-box {
+  border-left: 1px solid $blue;
+  border-right: 1px solid $blue;
+  border-bottom: 1px solid $blue;
+  padding: 27px;
+  margin-bottom: 27px;
+}
+
+
+//* ARTICLE STYLES *//
+
+article {
+  z-index: 5;
+  header h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  p.small {
+    font-size: $small-font-size;
+    line-height: 1.1rem;
+    letter-spacing: 0;
+  }
+  h2.om {
+    padding-top: $base-padding;
+  }
+  img.img-fluid.produktprofilbild {
+    max-width: 300px;
+  }
+  h2.pris{
+    font-family: "bebas-neue",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: $link-color;
+  }
+  .faktarutarubrik {
+    font-family: flood-std, sans-serif;
+    letter-spacing: 0;
+    margin-bottom: 1.5rem;
+    padding-top: $base-padding;
   }
 
-  ul.sidnavi {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 0px;
-    margin-bottom: 0px;
+}
 
-    & > li {
-      display: inline;
-      padding-right: 30px;
+ul.sidnavi {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  margin-bottom: 0px;
 
-      & > a {
-        font-size: $small-font-size;
+  & > li {
+    display: inline;
+    padding-right: 30px;
 
-        &:active {
-          color: $blue-color;
-        }
-        &:hover {
-          color: $blue-color;
-        }
-        &:focus {
-          color: $blue-color;
-          text-decortion: none;
-        }
+    & > a {
+      font-size: $small-font-size;
+
+      &:active {
+        color: $blue-color;
+      }
+      &:hover {
+        color: $blue-color;
+      }
+      &:focus {
+        color: $blue-color;
+        text-decortion: none;
       }
     }
   }
+}
 
 
-  .listsida a {
-    font-size: 21px;
-    &.active a {
-      color: $dark-color;
-    }
-    &:hover {
-      color: $blue-color;
-    }
-    &:focus {
-      color: $blue-color;
-      text-decortion: none;
-    }
+.listsida a {
+  font-size: 21px;
+  &.active a {
+    color: $dark-color;
   }
-
-
-  .profilbild {
-    max-width: 250px;
-    padding-left: 27px;
-    padding-right: 27px;
-  }
-
-  .faktaruta {
-    background-color: #ffffff;
-    padding: 27px;
-    max-width: 100%;
-  }
-
-  h1.faktarutarubrik, h2.faktarutarubrik {
-    transform: rotate -3 deg;
+  &:hover {
     color: $blue-color;
   }
-
-  ul.ingredienslista {
-    padding-left: 17px;
-    padding-bottom: 17px;
-    li {
-      color: $light-color;
-    }
+  &:focus {
+    color: $blue-color;
+    text-decortion: none;
   }
-  p.ingredienser {
-    color:  $light-color;
-  }
+}
 
-  ul.plus {
-    list-style-image: url('../img/plus.png');
+
+.profilbild {
+  max-width: 250px;
+  padding-left: 27px;
+  padding-right: 27px;
+}
+
+.faktaruta {
+  background-color: #ffffff;
+  padding: 27px;
+  max-width: 100%;
+}
+
+h1.faktarutarubrik, h2.faktarutarubrik {
+  transform: rotate -3 deg;
+  color: $blue-color;
+}
+
+ul.ingredienslista {
+  padding-left: 17px;
+  padding-bottom: 17px;
+  li {
+    color: $light-color;
+  }
+}
+p.ingredienser {
+  color:  $light-color;
+}
+
+ul.plus {
+  list-style-image: url('../img/plus.png');
     margin-bottom: 0;
   }
   ul.minus {
