@@ -253,6 +253,7 @@ h2 {
 h3 {
   font-weight: 300;
   font-size: 2rem;
+  line-height: 1.2;
   color: $text-color;
   margin-bottom: 1rem;
 }
@@ -345,6 +346,8 @@ button, .button {
 
 
 //* HEADER STYLES *//
+
+
 .site-header .wrapper {
   display: flex;
   flex-flow: column nowrap;
@@ -412,8 +415,6 @@ button, .button {
 .sloganbox {
   max-width: 80%;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
   h1.slogan {
     display: flex;
     justify-content: center;
@@ -464,9 +465,6 @@ button, .button {
     }
   }
 }
-
-//* SECTION STYLES *//
-
 
 //* FLIP CARD STYLES *//
 
@@ -679,7 +677,7 @@ article {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
-  p.small {
+  p.small, span.small {
     font-size: $small-font-size;
     line-height: 1.1rem;
     letter-spacing: 0;
@@ -702,7 +700,57 @@ article {
     margin-bottom: 1.5rem;
     padding-top: $base-padding;
   }
+  ul.ingredienslista {
+    list-style: none;
+    padding-left: $base-padding;
+    padding-bottom: $base-padding;
+    li {
+      color: $light-color;
+    }
+  }
+  p.ingredienser {
+    color:  $light-color;
+  }
 
+}
+
+#braattveta {
+  nav {
+    ul.nobullets {
+      padding-left: $base-padding;
+      padding-bottom: $base-padding;
+      list-style: none;
+      li {
+        color: $light-color;
+      }
+    }
+
+  }
+  ul.nobullets {
+    list-style: none;
+  }
+  h4 {
+    text-transform: uppercase;
+  }
+  p b {
+    color: $blue-color;
+  }
+  ul.plus {
+    list-style-image: url('../img/plus.png');
+    padding-bottom: 1rem;
+    padding-left: $spacing-unit;
+    li {
+      color: $text-color;
+    }
+  }
+  ul.minus {
+    list-style-image: url('../img/minus.png');
+    padding-left: $spacing-unit;
+    padding-bottom: 1rem;
+    li {
+      color: $text-color;
+    }
+  }
 }
 
 ul.sidnavi {
@@ -748,10 +796,8 @@ ul.sidnavi {
 }
 
 
-.profilbild {
+img.img-fluid.profilbild {
   max-width: 250px;
-  padding-left: 27px;
-  padding-right: 27px;
 }
 
 .faktaruta {
@@ -765,25 +811,6 @@ h1.faktarutarubrik, h2.faktarutarubrik {
   color: $blue-color;
 }
 
-ul.ingredienslista {
-  padding-left: 17px;
-  padding-bottom: 17px;
-  li {
-    color: $light-color;
-  }
-}
-p.ingredienser {
-  color:  $light-color;
-}
-
-ul.plus {
-  list-style-image: url('../img/plus.png');
-    margin-bottom: 0;
-  }
-  ul.minus {
-    list-style-image: url('../img/minus.png');
-  }
-
 
 
   //* FOOTER STYLES *//
@@ -795,7 +822,9 @@ footer {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: flex-end;
-
+    p {
+      margin-bottom: 0;
+    }
     img.icon {
       display: inline-block;
       max-width: 60px;
@@ -810,25 +839,30 @@ footer {
 }
   //* JUMPTARGET STYLES *//
 
-  .jumptarget:before {
+.jumptarget:before {
     content: "";
     display: block;
     height: 80px; /* fixed header height*/
     margin: -80px 0 0; /* negative fixed header height */
-  }
+}
 
-  article a.up {
-      float: right;
-      display: inline-block;
-    }
+article a.up {
+    float: right;
+    display: inline-block;
+    padding-top: $spacing-unit;
+    padding-bottom: $spacing-unit;
+}
 
+aside.fb {
+  background-color: $light-transparent;
+  padding-left: $base-padding;
 
   .fb-like {
     padding-top: 20px;
     padding-bottom: 15px;
     max-width: 98%;
   }
-
+}
 
   //* MEDIA QUERIES *//
 
