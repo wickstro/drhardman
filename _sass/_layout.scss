@@ -85,8 +85,22 @@ body#page-26 {
   -o-background-size: cover;
   background-size: cover;
 }
+body#page-30 {
+  background: url('../img/bgs/hiding.jpg')  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 body#page-31 {
   background: url('../img/bgs/water.jpg')  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body#page-32 {
+  background: url('../img/bgs/purplerain.jpg')  no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -106,6 +120,42 @@ body#page-45 {
   -o-background-size: cover;
   background-size: cover;
 }
+body#page-47 {
+  background: url('../img/bgs/dog.jpg')  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body#page-48 {
+  background: url('../img/bgs/lavendeloverlay.jpg')  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body#page-49 {
+  background: url('../img/bgs/citrus.jpg')  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body#page-55 {
+  background: url('../img/bgs/hair.jpg')  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body#page-56 {
+  background: url('../img/bgs/aloe.jpg')  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 body#page-66 {
   background: url('../img/bgs/autumnplant.jpg')  no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -113,16 +163,20 @@ body#page-66 {
   -o-background-size: cover;
   background-size: cover;
 }
-
-
-body#page-56 {
-  background: url('../img/bgs/kaktus.jpg')  no-repeat center center fixed;
+body#page-70 {
+  background: url('../img/bgs/choko.jpg')  no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-
+body#page-71 {
+  background: url('../img/bgs/citrus.jpg')  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 body#braattveta {
   background: url('../img/bgs/soffa.jpg')  no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -263,7 +317,9 @@ h4 {
   font-size: 1.4rem;
   color: $text-color;
   margin-bottom: 0.6rem;
+  text-transform: uppercase;
 }
+
 
 sup {
   font-size: .6em;
@@ -622,32 +678,24 @@ flex-flow: row wrap;
 justify-content: flex-start;
 padding-bottom: $base-padding;
 
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  .flip-card-front, .flip-card-back {
-    backface-visibility: hidden;
-    img {
-      max-width: 300px;
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    .flip-card-front, .flip-card-back {
+      backface-visibility: hidden;
+      img {
+        max-width: 300px;
+      }
+    }
+    @media (max-width: $tablet) {
+      &.second {
+        display: none;
+      }
     }
   }
-  @media (max-width: $tablet) {
-    &.second {
-      display: none;
-    }
-  }
-}
 }
 
-
-.produkter {
-  padding: $spacing-unit;
-  min-height: 450px;
-  & > a > img {
-    max-width: 200px;
-  }
-}
 
 img.cert {
   max-width: 70%;
@@ -656,16 +704,6 @@ img.cert {
   @media(max-width:$mobile) {
     max-width: 100%;
   }
-}
-
-
-
-.buy-box {
-  border-left: 1px solid $blue;
-  border-right: 1px solid $blue;
-  border-bottom: 1px solid $blue;
-  padding: 27px;
-  margin-bottom: 27px;
 }
 
 
@@ -694,7 +732,7 @@ article {
     font-weight: 400;
     color: $link-color;
   }
-  .faktarutarubrik {
+  h2.faktarutarubrik, h1.faktarutarubrik {
     font-family: flood-std, sans-serif;
     letter-spacing: 0;
     margin-bottom: 1.5rem;
@@ -712,8 +750,12 @@ article {
     color:  $light-color;
   }
 
+
 }
 
+
+
+// BRA ATT VETA -SIDAN //
 #braattveta {
   nav {
     ul.nobullets {
@@ -729,11 +771,8 @@ article {
   ul.nobullets {
     list-style: none;
   }
-  h4 {
-    text-transform: uppercase;
-  }
   p b {
-    color: $blue-color;
+    color: $pink;
   }
   ul.plus {
     list-style-image: url('../img/plus.png');
@@ -752,6 +791,7 @@ article {
     }
   }
 }
+
 
 ul.sidnavi {
   padding-top: 10px;
@@ -800,17 +840,14 @@ img.img-fluid.profilbild {
   max-width: 250px;
 }
 
-.faktaruta {
-  background-color: #ffffff;
-  padding: 27px;
-  max-width: 100%;
-}
-
-h1.faktarutarubrik, h2.faktarutarubrik {
+h2.faktarutarubrik, h1.faktarutarubrik {
+  font-family: flood-std, sans-serif;
+  letter-spacing: 0;
+  margin-bottom: 1.5rem;
+  padding-top: $base-padding;
   transform: rotate -3 deg;
   color: $blue-color;
 }
-
 
 
   //* FOOTER STYLES *//
