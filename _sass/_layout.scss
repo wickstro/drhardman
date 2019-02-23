@@ -28,6 +28,10 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+#snow {
+  width:100%;
+  height:100%;
+}
 
 body#page-error {
   background: url('../img/bgs/kaktus.jpg') no-repeat center center fixed;
@@ -36,8 +40,11 @@ body#page-error {
   -o-background-size: cover;
   background-size: cover;
 }
+body#alla-produkter {
+
+}
 body#page-1 {
-  background: url('../img/bgs/kiss.jpg') no-repeat center center fixed;
+  background: url('../img/bgs/body.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -85,7 +92,7 @@ body#page-25 {
   background-size: cover;
 }
 body#page-26 {
-  background: url('../img/bgs/woodandplants.jpg')  no-repeat center center fixed;
+  background: url('../img/bgs/front.jpg')  no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -132,6 +139,10 @@ body#page-47 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  h1.slogan {
+    color: $blue-color;
+    align-self: flex-start;
+  }
 }
 body#page-48 {
   background: url('../img/bgs/lavendeloverlay.jpg')  no-repeat center center fixed;
@@ -141,11 +152,18 @@ body#page-48 {
   background-size: cover;
 }
 body#page-49 {
-  background: url('../img/bgs/citrus.jpg')  no-repeat center center fixed;
+  background: url('../img/bgs/orangevanilla.jpg')  no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  article h2.faktarutarubrik {
+    color: $light-orange;
+  }
+  hr.primary {
+    border-top: 1px solid $light-orange;
+  }
+
 }
 
 body#page-55 {
@@ -390,6 +408,7 @@ img.img-fluid {
 
 button, .button {
   border: 2px solid $blue;
+  border-radius: 5px;
   font-weight: 400;
   font-size: 21px;
   padding: 0.5em 2em;
@@ -928,11 +947,8 @@ aside.fb {
    p, a, li {
      font-size: $small-font-size;
    }
-    .faktaruta {
-      margin-bottom: 16px;
-    }
 
-    h1, .hero h1, .buy-box h1, h2.pris {
+    h1, .hero h1, .buy-box h1, h2.pris, h2 {
       font-size: 2rem;
       line-height: 2.4rem;
       margin-bottom: 0.5rem;
@@ -952,17 +968,11 @@ aside.fb {
       padding-bottom: $base-padding;
     }
 
-    img.img-fluid.produktprofilbild {
-      max-width: 80%;
-      padding: 0.5rem 0 1rem 0;
-    }
-
-    .faktaruta {
-      margin-bottom: 16px;
-    }
-
     .fb-like {
       max-width: 98%;
+    }
+    h3 {
+      font-size: 1.4rem;
     }
 
   }
