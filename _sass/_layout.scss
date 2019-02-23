@@ -52,7 +52,7 @@ body#page-22 {
   background-size: cover;
 }
 body#page-23 {
-  background: url('../img/bgs/orangeleaf.jpg')  no-repeat center center fixed;
+  background: url('../img/bgs/citrus.jpg')  no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -155,6 +155,9 @@ body#page-56 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  h1.slogan {
+    text-shadow: 0 1px 2px #5a5d5f;
+  }
 }
 body#page-66 {
   background: url('../img/bgs/autumnplant.jpg')  no-repeat center center fixed;
@@ -171,7 +174,7 @@ body#page-70 {
   background-size: cover;
 }
 body#page-71 {
-  background: url('../img/bgs/citrus.jpg')  no-repeat center center fixed;
+  background: url('../img/bgs/orangeleaf.jpg')  no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -471,6 +474,8 @@ button, .button {
 .sloganbox {
   max-width: 80%;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
   h1.slogan {
     display: flex;
     justify-content: center;
@@ -504,7 +509,7 @@ button, .button {
       }
     }
    @media (max-width:$tablet) {
-     min-height:40vh;
+     min-height:35vh;
    }
    @media (max-width: $mobile) {
      min-height:20vh;
@@ -519,6 +524,9 @@ button, .button {
       transform: rotate(-5deg);
       font-size: 2rem;
     }
+  }
+  @media (max-width:$tablet) {
+    min-height:20vh;
   }
 }
 
