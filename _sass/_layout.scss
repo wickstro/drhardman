@@ -29,13 +29,19 @@ body {
   background-size: cover;
 }
 
+body#page-error {
+  background: url('../img/bgs/kaktus.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 body#page-1 {
   background: url('../img/bgs/kiss.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
 }
 body#page-10 {
   background: url('../img/bgs/maneter.jpg') no-repeat center center fixed;
@@ -114,7 +120,7 @@ body#page-44 {
   background-size: cover;
 }
 body#page-45 {
-  background: url('../img/bgs/boat.jpg')  no-repeat center center fixed;
+  background: url('../img/bgs/bermuda.jpg')  no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
