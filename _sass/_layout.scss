@@ -22,7 +22,7 @@ body {
   font-feature-settings: "kern" 1;
   font-kerning: normal;
   -ms-overflow-style: scrollbar;
-  background: url('../img/bgs/landscape.jpg') no-repeat center center fixed;
+  background: url('../img/bgs/landscape.jpg') no-repeat center top fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -40,11 +40,15 @@ body#page-error {
   -o-background-size: cover;
   background-size: cover;
 }
-body#alla-produkter {
-
+body#body {
+  background: url('../img/bgs/swimming.jpg') no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 body#page-1 {
-  background: url('../img/bgs/body.jpg') no-repeat center center fixed;
+  background: url('../img/bgs/woman.jpg') no-repeat center top fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -92,7 +96,7 @@ body#page-25 {
   background-size: cover;
 }
 body#page-26 {
-  background: url('../img/bgs/front.jpg')  no-repeat center center fixed;
+  background: url('../img/bgs/front.jpg')  no-repeat center top fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -627,7 +631,7 @@ p {
   color: $link-color;
 }
 }
-.flip-card-front.ten {
+.flip-card-front.ten, .card.ten {
   background-color: $grey;
 }
 .flip-card-front.twenty2 {
@@ -657,19 +661,19 @@ background-color: $purple;
 .flip-card-front.forty4 {
 background-color: $purple;
 }
-.flip-card-front.forty5 {
+.flip-card-front.forty5, .card.forty5 {
 background-color: $cherry;
 }
 .flip-card-front.forty7 {
 background-color: $dark-color;
 }
-.flip-card-front.forty8 {
+.flip-card-front.forty8, .card.forty8 {
 background-color: $purple;
 }
 .flip-card-front.forty9 {
 background-color: $light-orange;
 }
-.flip-card-front.fifty5 {
+.flip-card-front.fifty5, .card.fifty5 {
 background-color: $yellow;
 }
 .flip-card-front.fifty6 {
@@ -690,7 +694,7 @@ background-color: $orange;
 .flip-card-front.eighty {
 background-color: $orange;
 }
-.flip-card-front.eighty1 {
+.flip-card-front.eighty1, .card.eighty1 {
 background-color: $blue;
 }
 .flip-card-front.ninty3 {
@@ -739,200 +743,213 @@ img.cert {
   }
 }
 
+// INDEX PAGE PRODUKTGRUPPER //
 
-//* ARTICLE STYLES *//
+.produktgrupp {
+  .card {
+    text-align: center;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: $base-padding;
+    padding: 0.5rem;
+    opacity:0.8;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
 
-article {
-  z-index: 5;
-  header h1 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  //* ARTICLE STYLES *//
+
+  article {
+    z-index: 5;
+    header h1 {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    p.small, span.small {
+      font-size: $small-font-size;
+      line-height: 1.1rem;
+      letter-spacing: 0;
+    }
+    h2.om {
+      padding-top: $base-padding;
+    }
+    img.img-fluid.produktprofilbild {
+      max-width: 300px;
+    }
+    h2.pris{
+      font-family: "bebas-neue",sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      color: $link-color;
+    }
+    h2.faktarutarubrik, h1.faktarutarubrik {
+      font-family: flood-std, sans-serif;
+      letter-spacing: 0;
+      margin-bottom: 1.5rem;
+      padding-top: $base-padding;
+    }
+    ul.ingredienslista {
+      list-style: none;
+      padding-bottom: $base-padding;
+      li {
+        color: $light-color;
+      }
+    }
+    p.ingredienser {
+      color:  $light-color;
+    }
+
+
   }
-  p.small, span.small {
-    font-size: $small-font-size;
-    line-height: 1.1rem;
-    letter-spacing: 0;
+
+
+
+  // BRA ATT VETA -SIDAN //
+  #braattveta {
+    nav {
+      ul.nobullets {
+        padding-left: $base-padding;
+        padding-bottom: $base-padding;
+        list-style: none;
+        li {
+          color: $light-color;
+        }
+      }
+
+    }
+    ul.nobullets {
+      list-style: none;
+    }
+    p b {
+      color: $pink;
+    }
+    ul.plus {
+      list-style-image: url('../img/plus.png');
+      padding-bottom: 1rem;
+      padding-left: $spacing-unit;
+      li {
+        color: $text-color;
+      }
+    }
+    ul.minus {
+      list-style-image: url('../img/minus.png');
+      padding-left: $spacing-unit;
+      padding-bottom: 1rem;
+      li {
+        color: $text-color;
+      }
+    }
   }
-  h2.om {
-    padding-top: $base-padding;
+
+
+  ul.sidnavi {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+
+    & > li {
+      display: inline;
+      padding-right: 30px;
+
+      & > a {
+        font-size: $small-font-size;
+
+        &:active {
+          color: $blue-color;
+        }
+        &:hover {
+          color: $blue-color;
+        }
+        &:focus {
+          color: $blue-color;
+          text-decortion: none;
+        }
+      }
+    }
   }
-  img.img-fluid.produktprofilbild {
-    max-width: 300px;
+
+
+  .listsida a {
+    font-size: 21px;
+    &.active a {
+      color: $dark-color;
+    }
+    &:hover {
+      color: $blue-color;
+    }
+    &:focus {
+      color: $blue-color;
+      text-decortion: none;
+    }
   }
-  h2.pris{
-    font-family: "bebas-neue",sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    color: $link-color;
+
+
+  img.img-fluid.profilbild {
+    max-width: 250px;
   }
+
   h2.faktarutarubrik, h1.faktarutarubrik {
     font-family: flood-std, sans-serif;
     letter-spacing: 0;
     margin-bottom: 1.5rem;
     padding-top: $base-padding;
-  }
-  ul.ingredienslista {
-    list-style: none;
-    padding-left: $base-padding;
-    padding-bottom: $base-padding;
-    li {
-      color: $light-color;
-    }
-  }
-  p.ingredienser {
-    color:  $light-color;
-  }
-
-
-}
-
-
-
-// BRA ATT VETA -SIDAN //
-#braattveta {
-  nav {
-    ul.nobullets {
-      padding-left: $base-padding;
-      padding-bottom: $base-padding;
-      list-style: none;
-      li {
-        color: $light-color;
-      }
-    }
-
-  }
-  ul.nobullets {
-    list-style: none;
-  }
-  p b {
-    color: $pink;
-  }
-  ul.plus {
-    list-style-image: url('../img/plus.png');
-    padding-bottom: 1rem;
-    padding-left: $spacing-unit;
-    li {
-      color: $text-color;
-    }
-  }
-  ul.minus {
-    list-style-image: url('../img/minus.png');
-    padding-left: $spacing-unit;
-    padding-bottom: 1rem;
-    li {
-      color: $text-color;
-    }
-  }
-}
-
-
-ul.sidnavi {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 0px;
-  margin-bottom: 0px;
-
-  & > li {
-    display: inline;
-    padding-right: 30px;
-
-    & > a {
-      font-size: $small-font-size;
-
-      &:active {
-        color: $blue-color;
-      }
-      &:hover {
-        color: $blue-color;
-      }
-      &:focus {
-        color: $blue-color;
-        text-decortion: none;
-      }
-    }
-  }
-}
-
-
-.listsida a {
-  font-size: 21px;
-  &.active a {
-    color: $dark-color;
-  }
-  &:hover {
+    transform: rotate -3 deg;
     color: $blue-color;
   }
-  &:focus {
-    color: $blue-color;
-    text-decortion: none;
-  }
-}
-
-
-img.img-fluid.profilbild {
-  max-width: 250px;
-}
-
-h2.faktarutarubrik, h1.faktarutarubrik {
-  font-family: flood-std, sans-serif;
-  letter-spacing: 0;
-  margin-bottom: 1.5rem;
-  padding-top: $base-padding;
-  transform: rotate -3 deg;
-  color: $blue-color;
-}
 
 
   //* FOOTER STYLES *//
-footer {
-  background-color: rgba(0,0, 0, 0.8);
-  margin-top: 4rem;
-  .wrapper {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: flex-end;
-    p {
-      margin-bottom: 0;
-    }
-    img.icon {
-      display: inline-block;
-      max-width: 60px;
-    }
-    @media(max-width:$mobile) {
-      footer h1 {
-        font-size: 22px;
+  footer {
+    background-color: rgba(0,0, 0, 0.8);
+    margin-top: 4rem;
+    .wrapper {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: flex-end;
+      p {
+        margin-bottom: 0;
+      }
+      img.icon {
+        display: inline-block;
+        max-width: 60px;
+      }
+      @media(max-width:$mobile) {
+        footer h1 {
+          font-size: 22px;
+        }
       }
     }
-  }
 
-}
+  }
   //* JUMPTARGET STYLES *//
 
-.jumptarget:before {
+  .jumptarget:before {
     content: "";
     display: block;
     height: 80px; /* fixed header height*/
     margin: -80px 0 0; /* negative fixed header height */
-}
-
-article a.up {
-    float: right;
-    display: inline-block;
-    padding-top: $spacing-unit;
-    padding-bottom: $spacing-unit;
-}
-
-aside.fb {
-  background-color: $light-transparent;
-  padding-left: $base-padding;
-
-  .fb-like {
-    padding-top: 20px;
-    padding-bottom: 15px;
-    max-width: 98%;
   }
-}
+
+  .upbox a.up  {
+    display: flex;
+    justify-content:flex-end;
+    padding: $spacing-unit;
+  }
+
+  aside.fb {
+    background-color: $light-transparent;
+    padding-left: $base-padding;
+
+    .fb-like {
+      padding-top: 20px;
+      padding-bottom: 15px;
+      max-width: 98%;
+    }
+  }
 
   //* MEDIA QUERIES *//
 
@@ -944,9 +961,9 @@ aside.fb {
   }
 
   @include media-query($tablet) {
-   p, a, li {
-     font-size: $small-font-size;
-   }
+    p, a, li {
+      font-size: $small-font-size;
+    }
 
     h1, .hero h1, .buy-box h1, h2.pris, h2 {
       font-size: 2rem;
@@ -976,6 +993,7 @@ aside.fb {
     }
 
   }
+
 
 
 
