@@ -3,14 +3,37 @@ layout: default
 comments: true
 ---
 <ul class="sidnavi">
-    {% if page.type  == "produkter" %}
-    <li class="listsidnavi"><a class="text-capitalize" href="/#page-produkter">{{ page.type }}</a></li>
-    <li class="active"><a href="#page-top">{{ page.title }}</a></li>
+    {% if page.type  == "body" %}
+    <li class="listsidnavi"><a class="text-capitalize" href="/body">{{ page.type }}</a></li>
+    <li class="active"><a href="#page-top"> {{ page.title }}</a></li>
     {% endif %}
-    {% if page.type  == "ingredienser" %}
-    <li class="listsidnavi"><a class="text-capitalize" href="/ingredienser/">{{ page.type }}</a></li>
-    <li class="active"><a href="#page-top">{{ page.title }}</a></li>
+    {% if page.type  == "face" %}
+    <li class="listsidnavi"><a class="text-capitalize" href="/face">{{ page.type }}</a></li>
+    <li class="active"><a href="#page-top"> {{ page.title }}</a></li>
     {% endif %}
+    {% if page.type  == "Hands & Feet" and page.title == "Hands & Feet" %}
+     <li class="active"><a href="#page-top"> {{ page.title }}</a></li>
+    {% endif %}
+    {% if page.type  == "Hands & Feet" and page.title != "Hands & Feet" %}
+    <li class="listsidnavi"><a class="text-capitalize" href="/hands-and-feet">{{ page.type }}</a></li>
+     <li class="active"><a href="#page-top"> {{ page.title }}</a></li>
+     {% endif %}
+     {% if page.type  == "hair" and page.title == "Head & Hair" %}
+      <li class="active"><a href="#page-top"> {{ page.title }}</a></li>
+     {% endif %}
+     {% if page.type  == "hair" and page.title != "Head & Hair" %}
+     <li class="listsidnavi"><a class="text-capitalize" href="/hair">{{ page.type }}</a></li>
+     <li class="active"><a href="#page-top"> {{ page.title }}</a></li>
+      {% endif %}
+
+      {% if page.type  == "hygiene" and page.title == "Hygiene and Wash" %}
+       <li class="active"><a href="#page-top"> {{ page.title }}</a></li>
+       {% endif %}
+       {% if page.type  == "hygiene" and page.title != "Hygiene and Wash" %}
+       <li class="listsidnavi"><a class="text-capitalize" href="/hygiene">{{ page.type }}</a></li>
+       <li class="active"><a href="#page-top"> {{ page.title }}</a></li>
+       {% endif %}
+
 </ul>
 <main>
     {{ content }}
