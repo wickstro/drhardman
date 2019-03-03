@@ -62,11 +62,15 @@ body#face {
   background-size: cover;
 }
 body#hands {
-  background: url('../img/bgs/front.jpg') no-repeat center top fixed;
+  background: url('../img/bgs/travelfeet.jpg') no-repeat center top fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  h1.slogan {
+    align-self: flex-end;
+    text-shadow: 1px 2px 3px #000000;
+  }
 }
 
 body#hair {
@@ -84,11 +88,14 @@ body#hygiene {
   background-size: cover;
 }
 body#masks {
-  background: url('../img/bgs/hair.jpg') no-repeat center top fixed;
+  background: url('../img/bgs/fruittable.jpg') no-repeat center top fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  h1.slogan {
+    text-shadow: 1px 2px 2px #000000;
+  }
 }
 
 body#page-10 {
@@ -161,7 +168,7 @@ body#page-31 {
   background-size: cover;
 }
 body#page-32 {
-  background: url('../img/bgs/purplerain.jpg')  no-repeat center center fixed;
+  background: url('../img/bgs/aromatherapy.jpg')  no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -200,7 +207,7 @@ body#page-48 {
   background-size: cover;
 }
 body#page-49 {
-  background: url('../img/bgs/orangevanilla.jpg')  no-repeat center center fixed;
+  background: url('../img/bgs/orangevanilla.jpg')  no-repeat center top fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -232,11 +239,14 @@ body#page-56 {
   }
 }
 body#page-66 {
-  background: url('../img/bgs/autumnplant.jpg')  no-repeat center center fixed;
+  background: url('../img/bgs/lighthouse.jpg')  no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  h1.slogan {
+    align-self: flex-start;
+  }
 }
 body#page-70 {
   background: url('../img/bgs/choko.jpg')  no-repeat center center fixed;
@@ -247,6 +257,13 @@ body#page-70 {
 }
 body#page-71 {
   background: url('../img/bgs/orangeleaf.jpg')  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body#page-93 {
+  background: url('../img/bgs/vatten.jpg')  no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -537,13 +554,19 @@ button, .button {
   .sidnavi >li+li:before {
     content: "/";
     display: inline-block;
-
     color: $blue;
   }
 
-  ul.sidnavi > li.listsidnavi {
-    padding-left: 20px;
+  li.active  a {
+    color: $blue;
+  }
+
+
+  ul.sidnavi {
+   margin-left: 20px;
+    li.listsidnavi {
     padding-right: 0;
+    }
   }
 
 
