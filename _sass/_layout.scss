@@ -152,6 +152,13 @@ body#page-26 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  .sloganbox {
+    h1.slogan {
+      font-size: 2.6rem;
+      align-self: flex-start;
+      transform: rotate(-5deg);
+    }
+  }
 }
 body#page-30 {
   background: url('../img/bgs/hiding.jpg')  no-repeat center center fixed;
@@ -173,6 +180,9 @@ body#page-32 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  h1.slogan {
+    text-shadow: 1px 2px 2px #000000;
+  }
 }
 body#page-44 {
   background: url('../img/bgs/nightsky.jpg')  no-repeat center center fixed;
@@ -487,6 +497,7 @@ button, .button {
   text-transform: none;
   margin-bottom: 1rem;
   margin-top: 1em;
+  color: $light-color;
 
   &:hover {
   background-color: $blue;
@@ -833,7 +844,6 @@ img.cert {
 .produktgrupp {
   .card {
     text-align: center;
-    width: 100%;
     border-radius: 5px;
     margin-bottom: $base-padding;
     padding: 0.5rem;
@@ -885,7 +895,22 @@ img.cert {
     p.ingredienser {
       color:  $light-color;
     }
-
+    ul.plus {
+      list-style-image: url('../img/plus.png');
+      padding-bottom: 1rem;
+      padding-left: $spacing-unit;
+      li {
+        color: $text-color;
+      }
+    }
+    ul.minus {
+      list-style-image: url('../img/minus.png');
+      padding-left: $spacing-unit;
+      padding-bottom: 1rem;
+      li {
+        color: $text-color;
+      }
+    }
 
   }
 
