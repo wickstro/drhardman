@@ -21,12 +21,8 @@ body {
   -o-font-feature-settings: "kern" 1;
   font-feature-settings: "kern" 1;
   font-kerning: normal;
-  -ms-overflow-style: scrollbar;
-  background: url('../img/bgs/woman.jpg') no-repeat center top fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
+
 }
 #snow {
   width:100%;
@@ -39,13 +35,18 @@ body#page-error {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  -ms-content-zooming: none;
+
 }
+
 body#page-1 {
   background: url('../img/bgs/woman.jpg') no-repeat center top fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  -ms-content-zooming: none;
+  -ms-overflow-style: scrollbar;
 }
 body#body {
   background: url('../img/bgs/swimming.jpg') no-repeat center top fixed;
@@ -53,6 +54,7 @@ body#body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  -ms-content-zooming: none;
 }
 body#face {
   background: url('../img/bgs/darkwoman.jpg') no-repeat center top fixed;
@@ -60,17 +62,15 @@ body#face {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  -ms-content-zooming: none;
 }
 body#hands {
-  background: url('../img/bgs/travelfeet.jpg') no-repeat center top fixed;
+  background: url('../img/bgs/hands-feet-dark.jpg') no-repeat center top fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  h1.slogan {
-    align-self: flex-end;
-    text-shadow: 1px 2px 3px #000000;
-  }
+  -ms-content-zooming: none;
 }
 
 body#hair {
@@ -79,13 +79,18 @@ body#hair {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  -ms-content-zooming: none;
 }
 body#hygiene {
-  background: url('../img/bgs/young.jpg') no-repeat center top fixed;
+  background: url('../img/bgs/young_overlay.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  -ms-content-zooming: none;
+  h1.slogan {
+    align-self: flex-end;
+  }
 }
 body#masks {
   background: url('../img/bgs/fruittable.jpg') no-repeat center top fixed;
@@ -93,6 +98,8 @@ body#masks {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  -ms-content-zooming: none;
+
   h1.slogan {
     text-shadow: 1px 2px 2px #000000;
   }
@@ -104,6 +111,9 @@ body#page-10 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  h1.slogan {
+    text-shadow: 1px 2px 2px #000000;
+  }
 }
 body#page-22 {
   background: url('../img/bgs/kaktus.jpg') no-repeat center center fixed;
@@ -118,9 +128,8 @@ body#page-23 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
   article {
-    background: $red;
+    background-color: rgba(36, 39, 41, 0.67);
   }
   article h2.faktarutarubrik {
     color: #FFCB05;
@@ -181,7 +190,7 @@ body#page-32 {
   -o-background-size: cover;
   background-size: cover;
   h1.slogan {
-    text-shadow: 1px 2px 2px #000000;
+    text-shadow: 1px 2px 2px #5a5d5f;
   }
 }
 body#page-44 {
@@ -222,6 +231,9 @@ body#page-49 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  h1.slogan {
+    text-shadow: 0px 1px 1px #5a5d5f;
+  }
   article h2.faktarutarubrik {
     color: $light-orange;
   }
@@ -272,6 +284,29 @@ body#page-71 {
   -o-background-size: cover;
   background-size: cover;
 }
+body#page-80 {
+  background: url('../img/bgs/dracena.jpg')  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body#page-81 {
+  background: url('../img/bgs/blommasidan.jpg')  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .sloganbox {
+    h1.slogan {
+      text-shadow: 1px 2px 1px #5a5d5f;
+      font-size: 2.6rem;
+      align-self: flex-start;
+      transform: rotate(-5deg);
+    }
+  }
+}
+
 body#page-93 {
   background: url('../img/bgs/vatten.jpg')  no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -348,6 +383,11 @@ p {
     &.large-font-size {
       font-size: $large-font-size;
     }
+}
+p.small, span.small {
+  font-size: $small-font-size;
+  line-height: 1.1rem;
+  letter-spacing: 0;
 }
 
 a {
@@ -458,6 +498,9 @@ img.img-fluid {
 
 .padding {
   padding: $base-padding;
+  @media (max-width: $mobile) {
+    padding: $spacing-unit;
+  }
 }
 
 .dubbelpadding {
@@ -465,6 +508,12 @@ img.img-fluid {
   padding-bottom: $dubbel-padding;
   padding-left: $base-padding;
   padding-right: $base-padding;
+  @media (max-width: $mobile) {
+    padding-top: $base-padding;
+    padding-bottom: $base-padding;
+    padding-left: $spacing-unit;
+    padding-right:$spacing-unit;
+  }
 }
 
 .text-center {
@@ -499,13 +548,15 @@ button, .button {
   margin-top: 1em;
   color: $light-color;
 
-  &:hover {
+  &:hover, &:focus {
   background-color: $blue;
     color: $light-color;
+    outline: none;
 
   }
   a {
     color: $text-color;
+
   }
 }
 
@@ -533,6 +584,10 @@ button, .button {
     @media (max-width: $mobile) {
       display: none;
     }
+    @media (max-height: 500px) {
+      display: none;
+    }
+
   }
   a.namn {
     display: none;
@@ -565,11 +620,11 @@ button, .button {
   .sidnavi >li+li:before {
     content: "/";
     display: inline-block;
-    color: $blue;
+    color: $blue-color;
   }
 
   li.active  a {
-    color: $blue;
+    color: $blue-color;
   }
 
 
@@ -842,6 +897,9 @@ img.cert {
 // INDEX PAGE PRODUKTGRUPPER //
 
 .produktgrupp {
+  @media(max-width:$mobile) {
+    padding: 0 1rem;
+  }
   .card {
     text-align: center;
     border-radius: 5px;
@@ -862,11 +920,7 @@ img.cert {
       margin-top: 1rem;
       margin-bottom: 1rem;
     }
-    p.small, span.small {
-      font-size: $small-font-size;
-      line-height: 1.1rem;
-      letter-spacing: 0;
-    }
+
     h2.om {
       padding-top: $base-padding;
     }
@@ -1053,12 +1107,8 @@ img.cert {
   aside.fb {
     background-color: $light-transparent;
     padding-left: $base-padding;
-
-    .fb-like {
-      padding-top: 20px;
-      padding-bottom: 15px;
-      max-width: 98%;
-    }
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   //* MEDIA QUERIES *//
