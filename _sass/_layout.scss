@@ -2,325 +2,643 @@
 //* DOC STYLES *//
 
 html {
+  min-height: 100vh;
   height: 100%;
   overflow-x: hidden;
+  width: 100%;
 }
 
-body {
-  height:100%;
-  padding: 0;
-  margin: 0;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
-  font-weight: $base-font-weight;
-  line-height: $base-line-height;
-  background-color: $background-color;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
-  -moz-font-feature-settings: "kern" 1;
-  -o-font-feature-settings: "kern" 1;
-  font-feature-settings: "kern" 1;
-  font-kerning: normal;
-
-
-}
-#snow {
-  width:100%;
-  height:100%;
-}
-
-body#page-error {
-  background: url('../img/bgs/kaktus.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -ms-content-zooming: none;
-
-}
-
-body#page-1 {
-  background: url('../img/bgs/woman.jpg') no-repeat center top fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -ms-content-zooming: none;
-  -ms-overflow-style: scrollbar;
-}
-body#body {
-  background: url('../img/bgs/swimming.jpg') no-repeat center top fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -ms-content-zooming: none;
-}
-body#face {
-  background: url('../img/bgs/darkwoman.jpg') no-repeat center top fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -ms-content-zooming: none;
-}
-body#hands {
-  background: url('../img/bgs/hands-feet-dark.jpg') no-repeat center top fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -ms-content-zooming: none;
-}
-
-body#hair {
-  background: url('../img/bgs/hair.jpg') no-repeat center top fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -ms-content-zooming: none;
-}
-body#hygiene {
-  background: url('../img/bgs/young_overlay.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -ms-content-zooming: none;
-  h1.slogan {
-    align-self: flex-end;
+  body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    font-weight: $base-font-weight;
+    line-height: $base-line-height;
+    background-color: $background-color;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
   }
-}
-body#masks {
-  background: url('../img/bgs/fruittable.jpg') no-repeat center top fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -ms-content-zooming: none;
 
-  h1.slogan {
-    text-shadow: 1px 2px 2px #000000;
-  }
-}
 
-body#page-10 {
-  background: url('../img/bgs/maneter.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  h1.slogan {
-    text-shadow: 1px 2px 2px #000000;
+  body#page-error {
+    background: url('../img/bgs/kaktus.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -ms-content-zooming: none;
   }
-}
-body#page-22 {
-  background: url('../img/bgs/kaktus.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-body#page-23 {
-  background: url('../img/bgs/citrus_overlay.jpg')  no-repeat center top fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  article {
-    background-color: rgba(36, 39, 41, 0.67);
-  }
-  article h2.faktarutarubrik {
-    color: #FFCB05;
-  }
-  hr.primary {
-    border-top: 1px solid #FFCB05;
-  }
-}
-body#page-24 {
-  background: url('../img/bgs/choko.jpg')  no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  article {
-   background-color: rgba(25, 13, 13, 0.7);
-  }
-}
-body#page-25 {
-  background: url('../img/bgs/greenleaf.jpg')  no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-body#page-26 {
-  background: url('../img/bgs/rose.jpg')  no-repeat center top fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  .sloganbox {
-    h1.slogan {
-      font-size: 2.6rem;
-      align-self: flex-start;
-      transform: rotate(-5deg);
+
+
+  body#page-1 {
+    background: url('../img/bgs/woman.jpg') no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -ms-content-zooming: none;
+    -ms-overflow-style: scrollbar;
+    transform: translate3d(0, 0, 0);
+    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+      background: url('../img/bgs/vertical_woman.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -ms-content-zooming: none;
+      -ms-overflow-style: scrollbar;
+      transform: translate3d(0, 0, 0);
     }
   }
-}
-body#page-30 {
-  background: url('../img/bgs/hiding.jpg')  no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-body#page-31 {
-  background: url('../img/bgs/water.jpg')  no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-body#page-32 {
-  background: url('../img/bgs/aromatherapy.jpg')  no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  h1.slogan {
-    text-shadow: 1px 2px 2px #5a5d5f;
-  }
-}
-body#page-44 {
-  background: url('../img/bgs/nightsky.jpg')  no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-body#page-45 {
-  background: url('../img/bgs/bermuda.jpg')  no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-body#page-47 {
-  background: url('../img/bgs/dog.jpg')  no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  h1.slogan {
-    color: $blue-color;
-    align-self: flex-start;
-  }
-}
-body#page-48 {
-  background: url('../img/bgs/lavendeloverlay.jpg')  no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-body#page-49 {
-  background: url('../img/bgs/orangevanilla.jpg')  no-repeat center top fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  h1.slogan {
-    text-shadow: 0px 1px 1px #5a5d5f;
-  }
-  article h2.faktarutarubrik {
-    color: $light-orange;
-  }
-  hr.primary {
-    border-top: 1px solid $light-orange;
-  }
-
-}
-
-body#page-55 {
-  background: url('../img/bgs/hair.jpg')  no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-body#page-56 {
-  background: url('../img/bgs/aloe.jpg')  no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  h1.slogan {
-    text-shadow: 0 1px 2px #5a5d5f;
-  }
-}
-body#page-66 {
-  background: url('../img/bgs/lighthouse.jpg')  no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  h1.slogan {
-    align-self: flex-start;
-  }
-}
-body#page-70 {
-  background: url('../img/bgs/choko.jpg')  no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-body#page-71 {
-  background: url('../img/bgs/orangeleaf.jpg')  no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-body#page-80 {
-  background: url('../img/bgs/dracena.jpg')  no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-body#page-81 {
-  background: url('../img/bgs/blommasidan.jpg')  no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  .sloganbox {
-    h1.slogan {
-      text-shadow: 1px 2px 1px #5a5d5f;
-      font-size: 2.6rem;
-      align-self: flex-start;
-      transform: rotate(-5deg);
+  body#body {
+    background: url('../img/bgs/swimming.jpg') no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -ms-content-zooming: none;
+    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+      background: url('../img/bgs/vertical_swimming.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -ms-content-zooming: none;
+      -ms-overflow-style: scrollbar;
+      transform: translate3d(0, 0, 0);
     }
   }
-}
+  body#face {
+    background: url('../img/bgs/darkwoman.jpg') no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -ms-content-zooming: none;
+    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+      background: url('../img/bgs/vertical_darkwoman.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -ms-content-zooming: none;
+      -ms-overflow-style: scrollbar;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  body#hands {
+    background: url('../img/bgs/hands-feet-dark.jpg') no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -ms-content-zooming: none;
+    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+      background: url('../img/bgs/vertical_hands-feet-dark.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -ms-content-zooming: none;
+      -ms-overflow-style: scrollbar;
+      transform: translate3d(0, 0, 0);
+    }
+  }
 
-body#page-93 {
-  background: url('../img/bgs/vatten.jpg')  no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-body#braattveta {
-  background: url('../img/bgs/soffa.jpg')  no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+  body#hair {
+    background: url('../img/bgs/hair.jpg') no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -ms-content-zooming: none;
+    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+      background: url('../img/bgs/vertical_hair.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -ms-content-zooming: none;
+      -ms-overflow-style: scrollbar;
+      transform: translate3d(0, 0, 0);
+    }
+
+  }
+  body#hygiene {
+    background: url('../img/bgs/young_overlay.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -ms-content-zooming: none;
+    h1.slogan {
+      align-self: flex-end;
+    }
+    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+      background: url('../img/bgs/vertical_young_overlay.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -ms-content-zooming: none;
+      -ms-overflow-style: scrollbar;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  body#masks {
+    background: url('../img/bgs/fruittable.jpg') no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -ms-content-zooming: none;
+    h1.slogan {
+      text-shadow: 1px 2px 2px #000000;
+    }
+    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+      background: url('../img/bgs/vertical_fruittable.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -ms-content-zooming: none;
+      -ms-overflow-style: scrollbar;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  body#page-10 {
+    background: url('../img/bgs/maneter.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    h1.slogan {
+      text-shadow: 1px 2px 2px #000000;
+    }
+    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+      background: url('../img/bgs/vertical_maneter.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -ms-content-zooming: none;
+      -ms-overflow-style: scrollbar;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  body#page-22 {
+    background: url('../img/bgs/kaktus.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+      background: url('../img/bgs/vertical_kaktus.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -ms-content-zooming: none;
+      -ms-overflow-style: scrollbar;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  body#page-23 {
+    background: url('../img/bgs/citrus_overlay.jpg') no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    article {
+      background-color: rgba(36, 39, 41, 0.67);
+    }
+    article h2.faktarutarubrik {
+      color: #FFCB05;
+    }
+    hr.primary {
+      border-top: 1px solid #FFCB05;
+    }
+    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+      background: url('../img/bgs/vertical_citrus.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -ms-content-zooming: none;
+      -ms-overflow-style: scrollbar;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  body#page-24 {
+    background: url('../img/bgs/choko.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    article {
+      background-color: rgba(25, 13, 13, 0.7);
+    }
+    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+      background: url('../img/bgs/vertical_choko.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -ms-content-zooming: none;
+      -ms-overflow-style: scrollbar;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  body#page-25 {
+    background: url('../img/bgs/greenleaf.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+      background: url('../img/bgs/vertical_greenleaf.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -ms-content-zooming: none;
+      -ms-overflow-style: scrollbar;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  body#page-26 {
+    background: url('../img/bgs/rose.jpg') no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    .sloganbox {
+      h1.slogan {
+        font-size: 2.6rem;
+        align-self: flex-start;
+        transform: rotate(-5deg);
+      }
+    }
+    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+      background: url('../img/bgs/vertical_rose.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -ms-content-zooming: none;
+      -ms-overflow-style: scrollbar;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  body#page-30 {
+    background: url('../img/bgs/hiding.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+      background: url('../img/bgs/vertical_hiding.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -ms-content-zooming: none;
+      -ms-overflow-style: scrollbar;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  body#page-31 {
+    background: url('../img/bgs/water.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+      background: url('../img/bgs/vertical_water.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -ms-content-zooming: none;
+      -ms-overflow-style: scrollbar;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  body#page-32 {
+    background: url('../img/bgs/aromatherapy.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    h1.slogan {
+      text-shadow: 1px 2px 2px #5a5d5f;
+    }
+    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+      background: url('../img/bgs/vertical_aromatherapy.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -ms-content-zooming: none;
+      -ms-overflow-style: scrollbar;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  body#page-44 {
+    background: url('../img/bgs/nightsky.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+      background: url('../img/bgs/vertical_nightsky.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -ms-content-zooming: none;
+      -ms-overflow-style: scrollbar;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  body#page-45 {
+    background: url('../img/bgs/bermuda.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+      background: url('../img/bgs/vertical_bermuda.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -ms-content-zooming: none;
+      -ms-overflow-style: scrollbar;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  body#page-47 {
+    background: url('../img/bgs/dog.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    h1.slogan {
+      color: $blue-color;
+      align-self: flex-start;
+    }
+    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+      background: url('../img/bgs/vertical_dog.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -ms-content-zooming: none;
+      -ms-overflow-style: scrollbar;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  body#page-48 {
+    background: url('../img/bgs/lavendeloverlay.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+      background: url('../img/bgs/vertical_lavendeloverlay.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -ms-content-zooming: none;
+      -ms-overflow-style: scrollbar;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  body#page-49 {
+    background: url('../img/bgs/orangevanilla.jpg') no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    h1.slogan {
+      text-shadow: 0px 1px 1px #5a5d5f;
+    }
+    article h2.faktarutarubrik {
+      color: $light-orange;
+    }
+    hr.primary {
+      border-top: 1px solid $light-orange;
+    }
+    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+      background: url('../img/bgs/vertical_orangevanilla.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -ms-content-zooming: none;
+      -ms-overflow-style: scrollbar;
+      transform: translate3d(0, 0, 0);
+    }
+
+  }
+
+  body#page-55 {
+    background: url('../img/bgs/hair.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+      background: url('../img/bgs/vertical_hair.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -ms-content-zooming: none;
+      -ms-overflow-style: scrollbar;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  body#page-56 {
+    background: url('../img/bgs/aloe.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    h1.slogan {
+      text-shadow: 0 1px 2px #5a5d5f;
+    }
+    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+      background: url('../img/bgs/vertical_aloe.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -ms-content-zooming: none;
+      -ms-overflow-style: scrollbar;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  body#page-66 {
+    background: url('../img/bgs/lighthouse.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    h1.slogan {
+      align-self: flex-start;
+    }
+    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+      background: url('../img/bgs/vertical_lighthouse.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -ms-content-zooming: none;
+      -ms-overflow-style: scrollbar;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  body#page-67 {
+    background: url('../img/bgs/trappa2.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+      background: url('../img/bgs/vertical_trappa2.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -ms-content-zooming: none;
+      -ms-overflow-style: scrollbar;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  body#page-70 {
+    background: url('../img/bgs/choko.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+      background: url('../img/bgs/vertical_choko.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -ms-content-zooming: none;
+      -ms-overflow-style: scrollbar;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  body#page-71 {
+    background: url('../img/bgs/orangeleaf.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+      background: url('../img/bgs/vertical_orangeleaf.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -ms-content-zooming: none;
+      -ms-overflow-style: scrollbar;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  body#page-80 {
+    background: url('../img/bgs/dracena.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+      background: url('../img/bgs/vertical_dracena.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -ms-content-zooming: none;
+      -ms-overflow-style: scrollbar;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  body#page-81 {
+    background: url('../img/bgs/blommasidan.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    .sloganbox {
+      h1.slogan {
+        text-shadow: 1px 2px 1px #5a5d5f;
+        font-size: 2.6rem;
+        align-self: flex-start;
+        transform: rotate(-5deg);
+      }
+    }
+    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+      background: url('../img/bgs/vertical_blommasidan.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -ms-content-zooming: none;
+      -ms-overflow-style: scrollbar;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  body#page-93 {
+    background: url('../img/bgs/vatten.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+      background: url('../img/bgs/vertical_vatten.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -ms-content-zooming: none;
+      -ms-overflow-style: scrollbar;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  body#braattveta {
+    background: url('../img/bgs/soffa.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+      background: url('../img/bgs/vertical_soffa.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -ms-content-zooming: none;
+      -ms-overflow-style: scrollbar;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
 
 img {
   image-rendering: -webkit-optimize-contrast;
@@ -748,6 +1066,9 @@ button, .button {
   width: 100%;
   height: 100%;
   text-align: center;
+  -webkit-transition: transform 0.8s;
+  -moz-transition: transform 0.8s;
+  -o-transition: transform 0.8s;
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
@@ -763,6 +1084,9 @@ button, .button {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: all .8s ease-in-out;
   transform: rotateX(0deg);
 img {
   max-width: 200px;
@@ -771,7 +1095,8 @@ img {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-border-radius: 6px;
+  -webkit-transform: rotateY(0deg);
+  border-radius: 6px;
 h1 {
   color: $link-color;
   margin-top: 20px;
@@ -858,6 +1183,7 @@ background-color: $cherry;
   background-color: none;
   color: white;
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 .produktkort-singel {
@@ -872,15 +1198,16 @@ padding-bottom: $base-padding;
     height: 300px;
     .flip-card-front, .flip-card-back {
       backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
       img {
         max-width: 300px;
       }
     }
-    @media (max-width: $tablet) {
-      &.second {
-        display: none;
-      }
-    }
+    //@media (max-width: $tablet) {
+    //  &.second {
+    //    display: none;
+     // }
+    //}
   }
 }
 
