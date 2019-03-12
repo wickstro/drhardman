@@ -2,7 +2,6 @@
 //* DOC STYLES *//
 
 html {
-  min-height: 100vh;
   height: 100%;
   overflow-x: hidden;
   width: 100%;
@@ -50,7 +49,7 @@ html {
     and (max-device-width : 1024px) {
       background-attachment: initial;
     }
-    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+    @media screen and (max-width: $mobile) {
       background: url('../img/bgs/vertical_woman.jpg') no-repeat center top fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -68,7 +67,7 @@ html {
     -o-background-size: cover;
     background-size: cover;
     -ms-content-zooming: none;
-    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+    @media screen and (max-width: $mobile) {
       background: url('../img/bgs/vertical_swimming.jpg') no-repeat center top fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -86,7 +85,7 @@ html {
     -o-background-size: cover;
     background-size: cover;
     -ms-content-zooming: none;
-    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+    @media screen and (max-width: $mobile) {
       background: url('../img/bgs/vertical_darkwoman.jpg') no-repeat center top fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -104,7 +103,7 @@ html {
     -o-background-size: cover;
     background-size: cover;
     -ms-content-zooming: none;
-    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+     @media screen and (max-width: $mobile) {
       background: url('../img/bgs/vertical_hands-feet-dark.jpg') no-repeat center top fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -123,7 +122,7 @@ html {
     -o-background-size: cover;
     background-size: cover;
     -ms-content-zooming: none;
-    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+     @media screen and (max-width: $mobile) {
       background: url('../img/bgs/vertical_hair.jpg') no-repeat center top fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -145,7 +144,7 @@ html {
     h1.slogan {
       align-self: flex-end;
     }
-    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+     @media screen and (max-width: $mobile) {
       background: url('../img/bgs/vertical_young_overlay.jpg') no-repeat center top fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -166,7 +165,7 @@ html {
     h1.slogan {
       text-shadow: 1px 2px 2px #000000;
     }
-    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+     @media screen and (max-width: $mobile) {
       background: url('../img/bgs/vertical_fruittable.jpg') no-repeat center top fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -187,7 +186,7 @@ html {
     h1.slogan {
       text-shadow: 1px 2px 2px #000000;
     }
-    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+     @media screen and (max-width: $mobile) {
       background: url('../img/bgs/vertical_maneter.jpg') no-repeat center top fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -204,7 +203,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+     @media screen and (max-width: $mobile) {
       background: url('../img/bgs/vertical_kaktus.jpg') no-repeat center top fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -230,7 +229,7 @@ html {
     hr.primary {
       border-top: 1px solid #FFCB05;
     }
-    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+     @media screen and (max-width: $mobile) {
       background: url('../img/bgs/vertical_citrus.jpg') no-repeat center top fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -250,7 +249,7 @@ html {
     article {
       background-color: rgba(25, 13, 13, 0.7);
     }
-    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+     @media screen and (max-width: $mobile) {
       background: url('../img/bgs/vertical_choko.jpg') no-repeat center top fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -267,7 +266,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+     @media screen and (max-width: $mobile) {
       background: url('../img/bgs/vertical_greenleaf.jpg') no-repeat center top fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -291,7 +290,7 @@ html {
         transform: rotate(-5deg);
       }
     }
-    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+     @media screen and (max-width: $mobile) {
       background: url('../img/bgs/vertical_rose.jpg') no-repeat center top fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -308,7 +307,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+     @media screen and (max-width: $mobile) {
       background: url('../img/bgs/vertical_hiding.jpg') no-repeat center top fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -325,7 +324,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+     @media screen and (max-width: $mobile) {
       background: url('../img/bgs/vertical_water.jpg') no-repeat center top fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -345,7 +344,7 @@ html {
     h1.slogan {
       text-shadow: 1px 2px 2px #5a5d5f;
     }
-    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+     @media screen and (max-width: $mobile) {
       background: url('../img/bgs/vertical_aromatherapy.jpg') no-repeat center top fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -362,7 +361,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+     @media screen and (max-width: $mobile) {
       background: url('../img/bgs/vertical_nightsky.jpg') no-repeat center top fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -379,7 +378,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+     @media screen and (max-width: $mobile) {
       background: url('../img/bgs/vertical_bermuda.jpg') no-repeat center top fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -400,7 +399,7 @@ html {
       color: $blue-color;
       align-self: flex-start;
     }
-    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+     @media screen and (max-width: $mobile) {
       background: url('../img/bgs/vertical_dog.jpg') no-repeat center top fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -417,7 +416,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+     @media screen and (max-width: $mobile) {
       background: url('../img/bgs/vertical_lavendeloverlay.jpg') no-repeat center top fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -443,7 +442,7 @@ html {
     hr.primary {
       border-top: 1px solid $light-orange;
     }
-    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+     @media screen and (max-width: $mobile) {
       background: url('../img/bgs/vertical_orangevanilla.jpg') no-repeat center top fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -462,7 +461,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+     @media screen and (max-width: $mobile) {
       background: url('../img/bgs/vertical_hair.jpg') no-repeat center top fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -482,7 +481,7 @@ html {
     h1.slogan {
       text-shadow: 0 1px 2px #5a5d5f;
     }
-    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+     @media screen and (max-width: $mobile) {
       background: url('../img/bgs/vertical_aloe.jpg') no-repeat center top fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -502,7 +501,7 @@ html {
     h1.slogan {
       align-self: flex-start;
     }
-    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+     @media screen and (max-width: $mobile) {
       background: url('../img/bgs/vertical_lighthouse.jpg') no-repeat center top fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -520,7 +519,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+     @media screen and (max-width: $mobile) {
       background: url('../img/bgs/vertical_trappa2.jpg') no-repeat center top fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -538,7 +537,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+     @media screen and (max-width: $mobile) {
       background: url('../img/bgs/vertical_choko.jpg') no-repeat center top fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -555,7 +554,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+     @media screen and (max-width: $mobile) {
       background: url('../img/bgs/vertical_orangeleaf.jpg') no-repeat center top fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -572,7 +571,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+     @media screen and (max-width: $mobile) {
       background: url('../img/bgs/vertical_dracena.jpg') no-repeat center top fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -597,7 +596,7 @@ html {
         transform: rotate(-5deg);
       }
     }
-    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+     @media screen and (max-width: $mobile) {
       background: url('../img/bgs/vertical_blommasidan.jpg') no-repeat center top fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -615,7 +614,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+     @media screen and (max-width: $mobile) {
       background: url('../img/bgs/vertical_vatten.jpg') no-repeat center top fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -632,7 +631,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    @media only screen and (max-width: $mobile) and (orientation: portrait) {
+     @media screen and (max-width: $mobile) {
       background: url('../img/bgs/vertical_soffa.jpg') no-repeat center top fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -1185,7 +1184,7 @@ background-color: $cherry;
 
 /* Style the back side */
 .flip-card-back {
-  background-color: none;
+  background-color: unset;
   color: white;
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
@@ -1482,6 +1481,9 @@ img.cert {
     }
     h3 {
       font-size: 1.4rem;
+    }
+    aside.fb {
+      padding-left: 1rem;
     }
 
   }
