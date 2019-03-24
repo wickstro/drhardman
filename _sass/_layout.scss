@@ -1,3 +1,52 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 
 //* DOC STYLES *//
 
@@ -867,7 +916,7 @@ button, .button {
   background-color: transparent;
   text-transform: none;
   margin-bottom: 1rem;
-  margin-top: 1em;
+  margin-top: 2rem;
   color: $light-color;
 
   &:hover, &:focus {
@@ -1039,9 +1088,10 @@ button, .button {
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
-  padding-top: 3rem;
+  padding: 3rem 0;
   @media (max-width: $mobile) {
     justify-content: space-around;
+    padding: 1.5rem 0;
   }
 }
 
@@ -1052,6 +1102,7 @@ button, .button {
   height: 210px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   padding-bottom:20px;
+  overflow: hidden;
   @media(max-width:$tablet) {
     width: 195px;
     height: 195px;
@@ -1070,10 +1121,10 @@ button, .button {
   width: 100%;
   height: 100%;
   text-align: center;
-  -webkit-transition: transform 0.8s;
-  -moz-transition: transform 0.8s;
-  -o-transition: transform 0.8s;
-  transition: transform 0.8s;
+  -webkit-transition:0.8s;
+  -moz-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
   transform-style: preserve-3d;
 }
 
@@ -1085,31 +1136,43 @@ button, .button {
 /* Position the front and back side */
 .flip-card-front, .flip-card-back {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
-  -webkit-transition: all .8s ease-in-out;
-  transform: rotateX(0deg);
-img {
-  max-width: 200px;
-}
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  img {
+    max-height: 200px;
+    @media(max-width:$tablet) {
+      max-height: 195px;
+    }
+    @media(max-width:$mobile) {
+      max-height: 185px;
+    }
+  }
 }
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
+  z-index: 2;
+  transform: rotateY(0deg);
   -webkit-transform: rotateY(0deg);
+  position: relative;
   border-radius: 6px;
-h1 {
-  color: $link-color;
-  margin-top: 20px;
-  line-height: 4rem;
-  letter-spacing: 2px;
-}
-p {
-  color: $link-color;
-}
+  h1 {
+    color: $link-color;
+    padding-top: 20px;
+    line-height: 4rem;
+    letter-spacing: 2px;
+  }
+  p {
+    color: $link-color;
+  }
 }
 .flip-card-front.ten, .card.ten {
   background-color: $grey;
@@ -1184,17 +1247,16 @@ background-color: $cherry;
 
 /* Style the back side */
 .flip-card-back {
-  background-color: unset;
   color: white;
-  transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
+  transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
 }
 
 .produktkort-singel {
-display: flex;
-flex-flow: row wrap;
-justify-content: flex-start;
-padding-bottom: $base-padding;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  padding-bottom: $base-padding;
 
   .flip-card {
     background-color: transparent;
@@ -1204,14 +1266,15 @@ padding-bottom: $base-padding;
       backface-visibility: hidden;
       -webkit-backface-visibility: hidden;
       img {
-        max-width: 300px;
+        max-height: 300px;
+        @media(max-width:$tablet) {
+          max-height: 295px;
+        }
+        @media(max-width:$mobile) {
+          max-height: 285px;
+        }
       }
     }
-    //@media (max-width: $tablet) {
-    //  &.second {
-    //    display: none;
-     // }
-    //}
   }
 }
 
